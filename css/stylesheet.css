@@ -194,7 +194,8 @@ nav {
   padding-top: 0.21em;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   /* color: var(--blue-text); */
   background: -webkit-linear-gradient(#4568dc, #b06ab3);
   -webkit-text-fill-color: transparent;
@@ -203,12 +204,17 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* Intro section */
+/* Sections */
 
-.intro {
-  position: relative;
+.section {
   margin-top: 5em;
 }
+
+.sections + .sections {
+  margin-bottom: 4em;
+}
+
+/* Intro section */
 
 .sections-title {
   color: var(--blue-text);
@@ -222,10 +228,10 @@ h1,
 }
 
 .hola {
-  font-size: 2rem;
+  font-family: var(--audiowide);
+  font-size: 1.8rem;
   color: #5596bf;
   margin: 0;
-  font-family: var(--opensans);
   font-weight: 700;
 }
 
@@ -239,10 +245,9 @@ h1 {
 }
 
 .soy {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #9475af;
   margin: 0;
-  /* font-family: "Audiowide", cursive; */
   font-family: var(--opensans);
 }
 
@@ -280,6 +285,8 @@ h1 {
   overflow: hidden;
   background: var(--grey-background);
   border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .card + .card {
@@ -345,8 +352,18 @@ h1 {
 
 /* Skills */
 
-.Skills {
+.skills {
+  display: flex;
   width: 100%;
+  flex-wrap: wrap;
+}
+
+.lang-wrapper {
+  flex-wrap: wrap;
+}
+
+.language-icon {
+  width: 90px;
 }
 
 .lang-wrapper {
@@ -367,10 +384,6 @@ h1 {
 }
 
 /* Contact */
-
-.contact {
-  margin-top: 2em;
-}
 
 .social-media-icons {
   display: flex;
@@ -446,7 +459,8 @@ hr {
   margin: 5em 0;
   color: var(--navy-blue);
   background-color: var(--navy-blue);
-  height: 0.5px;
+  height: 0.1px;
+  opacity: 0.4;
 }
 
 .social-icon-feather {
@@ -458,4 +472,13 @@ footer {
   font-family: var(--audiowide);
   color: var(--navy-blue);
   text-align: center;
+}
+
+/* Dark theme styles */
+.dt-background {
+  background: var(--navy-blue);
+}
+
+.dt-text {
+  color: var(--grey-text);
 }

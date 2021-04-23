@@ -13,14 +13,14 @@
   <title>David Francisco</title>
 </head>
 
-<body>
-  <div class="container">
+<body data-bgDark>
+  <div class="container" data-bgDark>
     <button class="toggle-btn">
       <span class="hamburger"></span>
     </button>
 
-    <header class="header">
-      <div class="header-container">
+    <header class="header" data-bgDark>
+      <div class="header-container" data-bgDark>
         <a href="#" class="logo">
           <h2 class="logo-text">DF</h2>
           <!-- <img src="./logos and vectors/Logo/logo.svg" id="logo"> -->
@@ -34,145 +34,139 @@
           </ul>
 
           <ul class="nav-ul nav-ul--secondary">
-            <li class="nav-li">
-              <a href="#">
+            <li class="nav-li dark-btn">
+              <a>
                 <img class="theme-btn" src="./logos and vectors/Social media vectors/Feather icons/grey-moon.svg"
                   alt="">
               </a>
             </li>
-            <li class="nav-li"><a href="#" class="lan-btn">EN</a></li>
+            <li class="nav-li"><a class="lan-btn">EN</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- <div class="mobile-menu-bar">
-      <ul class="mobile-nav-ul">
-        <li class="mobile-nav-li"><a class="mobile-nav-link" href="#portafolio">Portafolio</a></li>
-        <li class="mobile-nav-li"><a class="mobile-nav-link" href="#skills">Skills</a></li>
-        <li class="mobile-nav-li"><a class="mobile-nav-link" href="#about">About</a></li>
-        <li class="mobile-nav-li"><a class="mobile-nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div> -->
-
-    <!-- Intro Home -->
-    <section class="sections intro">
-      <div class="intro-wrapper">
-        <div class="description">
-          <p class="hola">Hola, me llamo</p>
-          <h1>
-            David Francisco.
-          </h1>
-          <h2 class="soy">Soy desarrollador Front-end y amo desarrollar cosas para la web.</h2>
+    <section class="section">
+      <!-- Intro Home -->
+      <section class="sections intro">
+        <div class="intro-wrapper">
+          <div class="description">
+            <p class="hola">Hola, me llamo</p>
+            <h1 data-txtDark>
+              David Francisco.
+            </h1>
+            <h2 class="soy">Soy desarrollador Front-end y amo desarrollar cosas para la web.</h2>
+          </div>
+          <div class="pic-me">
+            <img src="./logos and vectors/Sections vectors/me/Untitled design.png" alt="web developer picture">
+          </div>
         </div>
-        <div class="pic-me">
-          <img src="./logos and vectors/Sections vectors/me/Untitled design.png" alt="web developer picture">
-        </div>
-      </div>
-      <a href="#" class="btn-port">Portafolio</a>
-    </section>
+        <a href="#" class="btn-port">Portafolio</a>
+      </section>
 
-
-    <!-- Portafolio Section -->
-    <section class="sections portafolio">
-      <div class="portafolio-wrapper">
-        <!-- <img class="port-img" src="./logos and vectors/Sections vectors/undraw_web_developer_p3e5.svg"
+      <!-- Portafolio Section -->
+      <section class="sections portafolio">
+        <div class="portafolio-wrapper">
+          <!-- <img class="port-img" src="./logos and vectors/Sections vectors/undraw_web_developer_p3e5.svg"
           alt="man with a laptop"> -->
-        <!-- Projects -->
-        <h2 class="sections-title">Portafolio</h2>
-        <figure class="card">
-          <img class="card-img" src="./logos and vectors/project-sample.PNG" alt="">
-          <figcaption>
-            <h3>Project 1</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum aliquid eius voluptatibus.
-            </p>
-            <div class="tech-use">
-              <a href="#" title="HTML" class="tech">HTML</a>
-              <a href="#" title="CSS" class="tech">CSS</a>
-              <a href="#" title="Javascritp" class="tech">Javascritp</a>
+          <!-- Projects -->
+          <h2 class="sections-title">Portafolio</h2>
+          <figure class="card" data-bgDark>
+            <img class="card-img" src="./logos and vectors/project-sample.PNG" alt="">
+            <figcaption>
+              <h3 data-txtDark>Project 1</h3>
+              <p data-txtDark>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum aliquid eius
+                voluptatibus.
+              </p>
+              <div class="tech-use">
+                <a href="#" title="HTML" class="tech">HTML</a>
+                <a href="#" title="CSS" class="tech">CSS</a>
+                <a href="#" title="Javascritp" class="tech">Javascritp</a>
+              </div>
+            </figcaption>
+            <div class="card-buttons">
+              <button class="card-btn">
+                <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.png" alt="github logo">
+                Source Code
+              </button>
+              <button class="card-btn">
+                <img class="live-preview" src="./logos and vectors/Social media vectors/Feather icons/open-links.png"
+                  alt=""> Live
+                Preview
+              </button>
             </div>
-          </figcaption>
-          <div class="card-buttons">
-            <button class="card-btn">
-              <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.png" alt="github logo">
-              Source Code
-            </button>
-            <button class="card-btn">
-              <img class="live-preview" src="./logos and vectors/Social media vectors/Feather icons/open-links.png"
-                alt=""> Live
-              Preview
-            </button>
-          </div>
-        </figure>
+          </figure>
 
-        <figure class="card">
-          <img class="card-img" src="./logos and vectors/project-sample.PNG" alt="">
-          <figcaption>
-            <h3>Project 2</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum aliquid eius voluptatibus.
-            </p>
-            <div class="tech-use">
-              <a href="#" title="HTML" class="tech">HTML</a>
-              <a href="#" title="CSS" class="tech">CSS</a>
-              <a href="#" title="Javascritp" class="tech">Javascritp</a>
+          <figure class="card" data-bgDark>
+            <img class="card-img" src="./logos and vectors/project-sample.PNG" alt="">
+            <figcaption>
+              <h3 data-txtDark>Project 2</h3>
+              <p data-txtDark>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum aliquid eius
+                voluptatibus.
+              </p>
+              <div class="tech-use">
+                <a href="#" title="HTML" class="tech">HTML</a>
+                <a href="#" title="CSS" class="tech">CSS</a>
+                <a href="#" title="Javascritp" class="tech">Javascritp</a>
+              </div>
+            </figcaption>
+            <div class="card-buttons">
+              <button class="card-btn">
+                <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.png" alt="github logo">
+                Source Code
+              </button>
+              <button class="card-btn">
+                <img class="live-preview" src="./logos and vectors/Social media vectors/Feather icons/open-links.png"
+                  alt=""> Live
+                Preview
+              </button>
             </div>
-          </figcaption>
-          <div class="card-buttons">
-            <button class="card-btn">
-              <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.png" alt="github logo">
-              Source Code
-            </button>
-            <button class="card-btn">
-              <img class="live-preview" src="./logos and vectors/Social media vectors/Feather icons/open-links.png"
-                alt=""> Live
-              Preview
-            </button>
-          </div>
-        </figure>
+          </figure>
 
-        <figure class="card">
-          <img class="card-img" src="./logos and vectors/project-sample.PNG" alt="">
-          <figcaption>
-            <h3>Project 3</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum aliquid eius voluptatibus.
-            </p>
-            <div class="tech-use">
-              <a href="#" title="HTML" class="tech">HTML</a>
-              <a href="#" title="CSS" class="tech">CSS</a>
-              <a href="#" title="Javascritp" class="tech">Javascritp</a>
+          <figure class="card" data-bgDark>
+            <img class="card-img" src="./logos and vectors/project-sample.PNG" alt="">
+            <figcaption>
+              <h3 data-txtDark>Project 3</h3>
+              <p data-txtDark>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum aliquid eius
+                voluptatibus.
+              </p>
+              <div class="tech-use">
+                <a href="#" title="HTML" class="tech">HTML</a>
+                <a href="#" title="CSS" class="tech">CSS</a>
+                <a href="#" title="Javascritp" class="tech">Javascritp</a>
+              </div>
+            </figcaption>
+            <div class="card-buttons">
+              <button class="card-btn">
+                <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.png" alt="github logo">
+                Source Code
+              </button>
+              <button class="card-btn">
+                <img class="live-preview" src="./logos and vectors/Social media vectors/Feather icons/open-links.png"
+                  alt=""> Live
+                Preview
+              </button>
             </div>
-          </figcaption>
-          <div class="card-buttons">
-            <button class="card-btn">
-              <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.png" alt="github logo">
-              Source Code
-            </button>
-            <button class="card-btn">
-              <img class="live-preview" src="./logos and vectors/Social media vectors/Feather icons/open-links.png"
-                alt=""> Live
-              Preview
-            </button>
-          </div>
-        </figure>
-      </div>
-    </section>
+          </figure>
+        </div>
+      </section>
 
-    <!-- Skills Section -->
-    <section class="sections skills container">
-      <h2 class="sections-title">Habilidades</h2>
+      <!-- Skills Section -->
+      <section class="sections skills container">
+        <h2 class="sections-title">Habilidades</h2>
 
-      <div class="skills-img"><img src="./logos and vectors/Sections vectors/undraw_Code_review_re_woeb.svg" alt="">
-      </div>
+        <div class="skills-img"><img src="./logos and vectors/Sections vectors/undraw_Code_review_re_woeb.svg" alt="">
+        </div>
 
-      <div class="languges">
+        <!-- <div class="languges"> -->
         <div class="lang-wrapper">
           <div class="language-wrapper">
-            <img class="language-icon" src="./logos and vectors/Languages logo/html5-with-wordmark-color.svg"
-              alt="HTML logo">
+            <img class="language-icon" src="./logos and vectors/Languages logo/html5.svg" alt="HTML logo">
           </div>
 
           <div class="language-wrapper">
-            <img class="language-icon" src="./logos and vectors/Languages logo/css3-seeklogo.com.svg" alt="CSS logo">
+            <img class="language-icon" src="./logos and vectors/Languages logo/css.svg" alt="CSS logo">
           </div>
 
           <div class="language-wrapper">
@@ -194,47 +188,46 @@
               alt="Bootstrap logo">
           </div>
         </div>
-      </div>
-    </section>
+        <!-- </div> -->
+      </section>
 
-    <!-- About Section -->
-    <section class="sections about container">
-      <h2 class="sections-title">Sobre Mi</h2>
-      <img src="./logos and vectors/Sections vectors/undraw_about_me_wa29.svg" alt="about me">
-      <p>
-        Descubri mi pasion por el desarrollo web cuando me vi obligado a reparar la barra de menu de la pagina de mi
-        novia sin saber abasolutamente nada acerca el desarrollo web.
+      <!-- About Section -->
+      <section class="sections about container">
+        <h2 class="sections-title">Sobre Mi</h2>
+        <img src="./logos and vectors/Sections vectors/undraw_about_me_wa29.svg" alt="about me">
+        <p>
+          Descubri mi pasion por el desarrollo web cuando me vi obligado a reparar la barra de menu de la pagina de mi
+          novia sin saber abasolutamente nada acerca el desarrollo web.
+        </p>
+      </section>
 
-        Desde ese entonces me he dedicado a aprender para no solo reparar sitios web rotos, sino para construir nuevos
-        sitios asombrosos.
-      </p>
-    </section>
+      <!-- Contact Section -->
+      <section class="sections contact container">
+        <h2 class="sections-title">Hablemos!</h2>
+        <div class="contact-img">
+          <img src="./logos and vectors/Sections vectors/contact.svg" alt="">
+        </div>
+        <div class="social-media-icons">
+          <img src="./logos and vectors/Social media vectors/linkedin.png" alt="" class="social-icon">
+          <img src="./logos and vectors/Social media vectors/twitter.png" alt="" class="social-icon">
+          <img src="./logos and vectors/Social media vectors/iconfinder_instagram_2142569.png" alt=""
+            class="social-icon">
+          <img src="./logos and vectors/Social media vectors/gmail.svg" alt="" class="social-icon">
+        </div>
+        <form class="form">
+          <label data-txtDark for="name">Nombre:</label><br>
+          <input type="text" id="name" name="name"><br>
 
-    <!-- Contact Section -->
-    <section class="sections contact container">
-      <h2 class="sections-title">Hablemos!</h2>
-      <div class="contact-img">
-        <img src="./logos and vectors/Sections vectors/contact.svg" alt="">
-      </div>
-      <div class="social-media-icons">
-        <img src="./logos and vectors/Social media vectors/linkedin.png" alt="" class="social-icon">
-        <img src="./logos and vectors/Social media vectors/twitter.png" alt="" class="social-icon">
-        <img src="./logos and vectors/Social media vectors/iconfinder_instagram_2142569.png" alt="" class="social-icon">
-        <img src="./logos and vectors/Social media vectors/gmail.svg" alt="" class="social-icon">
-      </div>
-      <form class="form">
-        <label for="name">Nombre:</label><br>
-        <input type="text" id="name" name="name"><br>
+          <label data-txtDark for="email">Email:</label><br>
+          <input type="text" id="email" name="email"><br>
 
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email"><br>
-
-        <label for="message">Mensaje:</label><br>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <label data-txtDark for="message">Mensaje:</label><br>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
 
-        <input class="form-btn" type="submit" value="Enviar">
-      </form>
+          <input class="form-btn" type="submit" value="Enviar">
+        </form>
+      </section>
     </section>
 
     <hr>
@@ -250,7 +243,7 @@
         <img src="./logos and vectors/Social media vectors/Feather icons/linkedin.svg" alt=""
           class="social-icon-feather">
       </div>
-      <p>Diseñado y desarrollado por <br> David Francisco</p>
+      <p data-txtDark>Diseñado y desarrollado por <br> David Francisco</p>
     </footer>
   </div>
   </div>

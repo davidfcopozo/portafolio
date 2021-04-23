@@ -6,5 +6,7 @@ w =window;
 
 d.addEventListener("DOMContentLoaded", ()=>{
   mobileMenu(".toggle-btn");
-  theme();
 });
+
+
+theme(".theme-btn", "dt-background", "dt-text");
