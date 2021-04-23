@@ -94,6 +94,10 @@ img {
   align-items: center;
   height: auto;
   background: linear-gradient(to right, #ffffff, #ece9e6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 .logo {
@@ -172,26 +176,22 @@ nav {
 }
 
 .nav-ul--secondary a {
-  font-size: 1.4rem;
-  color: var(--navy-blue);
+  font-family: var(--audiowide);
+  font-weight: 300;
+  font-size: 1rem;
   text-decoration: none;
-  /* color: #c4c4c4; */
+  margin-left: 0.3em;
+  font-weight: bolder;
+  align-self: center;
 }
 
 .nav-ul--primary > li {
   margin-bottom: 2em;
 }
 
-.nav-ul--secondary > li {
-  margin-left: 0.7em;
-  font-weight: bolder;
-  align-self: center;
-}
-
 .theme-btn {
-  width: 1.62rem;
-  display: flex;
-  stroke: var(--grey-text);
+  width: 1rem;
+  padding-top: 0.21em;
 }
 
 nav a:hover {
@@ -204,6 +204,11 @@ nav a:hover {
 }
 
 /* Intro section */
+
+.intro {
+  position: relative;
+  margin-top: 5em;
+}
 
 .sections-title {
   color: var(--blue-text);
@@ -271,23 +276,35 @@ h1 {
   flex: 1 0 300px;
   flex-direction: column;
   max-width: 350px;
-  margin-top: 2em;
+  margin-top: 1em;
   overflow: hidden;
+  background: var(--grey-background);
+  border-radius: 20px;
 }
 
-.texh-use {
+.card + .card {
+  margin-top: 2em;
+}
+
+.tech-use {
   display: flex;
+  gap: 0.2em;
+  justify-content: center;
 }
 
 .tech {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
   text-align: center;
   text-decoration: none;
   background: var(--purp-btn);
   color: var(--grey-background);
-  padding: 0.25em 0.8em;
+  padding: 0.25em 0.9em;
   border-radius: 4px;
   display: inline-block;
   margin-bottom: 0.2em;
+  pointer-events: none;
 }
 
 .github-img-btn,
@@ -295,6 +312,16 @@ h1 {
   width: 0.8rem;
   margin-right: 0.3em;
   color: black;
+  pointer-events: initial;
+}
+
+.card-img {
+  /* border-radius: 5px; */
+  overflow: hidden;
+  display: block;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .card-buttons {
@@ -306,12 +333,14 @@ h1 {
 
 .card-btn {
   display: flex;
+  padding: 0.35em 0.7em;
+  border-radius: 100px;
+  border: 2px solid var(--purp-text);
 }
 
 .card-buttons button {
   display: inline-block;
   margin: 0 0.3rem;
-  text-align: center;
 }
 
 /* Skills */
@@ -339,6 +368,10 @@ h1 {
 
 /* Contact */
 
+.contact {
+  margin-top: 2em;
+}
+
 .social-media-icons {
   display: flex;
   justify-content: space-between;
@@ -360,6 +393,7 @@ label {
   font-family: var(--opensans);
   font-size: 1.2rem;
   font-weight: 700;
+  margin-top: 1.5em;
 }
 
 #name,
