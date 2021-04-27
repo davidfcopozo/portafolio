@@ -5,7 +5,7 @@ const d = document,
 w =window;
 
 d.addEventListener("DOMContentLoaded", ()=>{
-  mobileMenu(".toggle-btn");
+  mobileMenu(".hamburger-btn", ".menu-bar a");
 });
 
 

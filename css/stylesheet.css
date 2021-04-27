@@ -7,6 +7,7 @@
   --blue-text: #5596bf;
   --audiowide: "Audiowide", cursive;
   --opensans: "Open Sans", sans-serif;
+  --pseudo-background: #12232e;
 }
 
 body {
@@ -40,7 +41,7 @@ img {
 
 /* Hamburger */
 
-.toggle-btn {
+.hamburger-btn {
   cursor: pointer;
   border: 0;
   width: 3em;
@@ -52,38 +53,23 @@ img {
   outline: none;
   position: fixed;
   right: 4.5%;
-  bottom: 0;
+  bottom: 2%;
   margin-bottom: 0.5em;
   z-index: 1000;
+  background: transparent;
 }
 
-.hamburger {
-  width: 50%;
-  position: relative;
+.hamburger-box span,
+.hamburger-box span::before,
+.hamburger-box span::after {
+  background: var(--pseudo-background);
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  display: block;
-  margin: 0 auto;
-  height: 3px;
-  background: var(--navy-blue);
-}
-
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  width: 100%;
-}
-
-.hamburger::before {
-  transform: translateY(-6px);
-}
-
-.hamburger::after {
-  transform: translateY(3px);
-}
+/* .hamburger-box span,
+.hamburger-box span::before,
+.hamburger-box span::after {
+  background: var(--grey-background);
+} */
 
 /* Header and Nav */
 
@@ -172,15 +158,12 @@ nav {
   font-size: 2rem;
   font-weight: 700;
   text-decoration: none;
-  /* color: var(--grey-text); */
 }
 
-.nav-ul--secondary a {
-  font-family: var(--audiowide);
-  font-weight: 300;
-  font-size: 1rem;
+.nav-ul--secondary li {
   text-decoration: none;
-  margin-left: 0.3em;
+  margin: 0;
+  padding: 0;
   font-weight: bolder;
   align-self: center;
 }
@@ -190,8 +173,25 @@ nav {
 }
 
 .theme-btn {
+  font-size: 1rem;
   width: 1rem;
-  padding-top: 0.21em;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  align-items: center;
+}
+
+.lang-btn {
+  color: var(--grey-text);
+  font-size: 1rem;
+  font-family: var(--audiowide);
+  /* padding-top: 0.21em; */
+  align-items: center;
+  background: transparent;
+  border: none;
+  outline: none;
 }
 
 nav a:hover,
@@ -285,12 +285,16 @@ h1 {
   overflow: hidden;
   background: var(--grey-background);
   border-radius: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12), 0 5px 8px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .card + .card {
   margin-top: 2em;
+}
+
+figcaption {
+  text-align: center;
 }
 
 .tech-use {

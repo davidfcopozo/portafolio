@@ -1,17 +1,20 @@
 const d = document;
 let ls = localStorage;
 
+
 export default function theme(darkModeBtn, bgDarkClass, txtDarkClass) {
   const $darkThemeBtn = d.querySelector(darkModeBtn),
   $bgSelectors = d.querySelectorAll("[data-bgDark]"),
-  $txtSelectors = d.querySelectorAll("[data-txtDark]");
+  $txtSelectors = d.querySelectorAll("[data-txtDark]"),
+  root = document.querySelector(":root");
 
-    let moon = `<img src="./logos and vectors/Social media vectors/Feather icons/moon.svg" alt="">`,
-    sun = `<img src="./logos and vectors/Social media vectors/Feather icons/sun.svg" alt="">`;
+    let moon = "🌙",
+    sun = "☀️";
 
   const lightMode = ()=>{
    $bgSelectors.forEach(el => el.classList.remove(bgDarkClass));
-       $darkThemeBtn.innerHTML = moon;
+       $darkThemeBtn.textContent = moon;
+       root.style.setProperty("--pseudo-background", '#12232e');
 
    $txtSelectors.forEach(el => el.classList.remove(txtDarkClass));
 
@@ -20,16 +23,19 @@ export default function theme(darkModeBtn, bgDarkClass, txtDarkClass) {
 
   const darkMode = ()=>{
    $bgSelectors.forEach(el => el.classList.add(bgDarkClass));
-    $darkThemeBtn.innerHTML = sun;
+    $darkThemeBtn.textContent = sun;
+    root.style.setProperty("--pseudo-background", 'white');
 
    $txtSelectors.forEach(el => el.classList.add(txtDarkClass));
+
+   
 
        ls.setItem("theme", "dark");
  }
 
  d.addEventListener("click", (e)=>{
    if(e.target.matches(darkModeBtn)) {
-     if($darkThemeBtn.innerHTML === moon) {
+     if($darkThemeBtn.textContent === moon) {
        darkMode();
      } else {
        lightMode();
