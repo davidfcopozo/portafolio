@@ -34,7 +34,7 @@ img {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   /* border: solid red 1px; */
 }
@@ -52,7 +52,7 @@ img {
   background: transparent;
   outline: none;
   position: fixed;
-  right: 4.5%;
+  right: 9%;
   bottom: 2%;
   margin-bottom: 0.5em;
   z-index: 1000;
@@ -84,6 +84,10 @@ img {
   top: 0;
   left: 0;
   z-index: 100;
+}
+
+.header {
+  margin-bottom: 6em;
 }
 
 .logo {
@@ -209,12 +213,8 @@ nav a:focus {
 
 /* Sections */
 
-.section {
-  margin-top: 5em;
-}
-
 .sections + .sections {
-  margin-bottom: 4em;
+  margin-top: 4em;
 }
 
 /* Intro section */
@@ -224,26 +224,32 @@ nav a:focus {
   font-size: 2rem;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .hola,
-h1,
 .soy {
-  margin-bottom: 2em;
-  font-size: 1.5rem;
+  /* margin-bottom: 2.5em; */
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .hola {
   font-family: var(--audiowide);
   color: #5596bf;
   margin: 0;
-  font-weight: 700;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: var(--navy-blue);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
+  margin-bottom: 0.2em;
   font-family: var(--audiowide);
 }
 
@@ -251,6 +257,23 @@ h1 {
   color: #9475af;
   margin: 0;
   font-family: var(--opensans);
+}
+
+.intro-social {
+  display: flex;
+  justify-content: center;
+  color: var(--navy-blue);
+  gap: 1.5em;
+  margin: 0.5em 0;
+}
+
+.intro-icons + .intro-icons {
+  margin-left: 1.5em;
+}
+
+.fab,
+.far {
+  font-size: 2rem;
 }
 
 .btn-port {
@@ -263,7 +286,7 @@ h1 {
   padding: 0.75em 2em;
   border-radius: 100px;
   text-align: center;
-  margin-left: 50%;
+  margin: 2rem 0 1rem 50%;
   transform: translateX(-50%);
 }
 
@@ -468,8 +491,20 @@ hr {
   opacity: 0.4;
 }
 
-.social-icon-feather {
-  width: 1.5em;
+.footer-social-wrapper {
+  display: flex;
+  justify-content: center;
+  color: var(--navy-blue);
+  gap: 1em;
+  margin: 0.5em 0;
+}
+
+.footer-icons * {
+  font-size: 1.5rem;
+}
+
+.footer-icons + .footer-icons {
+  margin-left: 1em;
 }
 
 footer {
