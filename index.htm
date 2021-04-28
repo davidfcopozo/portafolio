@@ -17,9 +17,9 @@
 <body data-bgDark>
   <div class="container" data-bgDark>
 
-    <button class="hamburger-btn hamburger hamburger--emphatic" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
+    <button class="hamburger-btn hamburger hamburger--emphatic" type="button" id="toggle">
+      <span class="hamburger-box" id="inner-toggle">
+        <span class="hamburger-inner" id="in-toggle"></span>
       </span>
     </button>
 
@@ -29,19 +29,19 @@
           <h2 class="logo-text">DF</h2>
           <!-- <img src="./logos and vectors/Logo/logo.svg" id="logo"> -->
         </a>
-        <nav class="menu-bar">
-          <ul class="nav-ul nav-ul--primary">
-            <li class="nav-li" class="links"><a href="#portafolio">Portafolio</a></li>
-            <li class="nav-li"><a href="#skills">Skills</a></li>
-            <li class="nav-li"><a href="#about">About</a></li>
-            <li class="nav-li"><a href="#contact">Contact</a></li>
+        <nav class="menu-bar" id="navbar" data-bgDark>
+          <ul class="nav-ul nav-ul--primary" data-txtDark>
+            <li class="nav-li" class="links"><a href="#portafolio" data-txtDark>Portafolio</a></li>
+            <li class="nav-li"><a href="#skills" data-txtDark>Skills</a></li>
+            <li class="nav-li"><a href="#about" data-txtDark>About</a></li>
+            <li class="nav-li"><a href="#contact" data-txtDark>Contact</a></li>
           </ul>
 
           <ul class="nav-ul nav-ul--secondary">
             <li class="nav-li dark-btn">
               <button class="theme-btn">🌙</button>
             </li>
-            <button class="nav-li lang-btn">EN</button>
+            <button class="nav-li lang-btn" data-txtDark>EN</button>
             </li>
           </ul>
         </nav>
@@ -52,7 +52,7 @@
       <!-- Intro Home -->
       <section class="sections intro">
         <div class="intro-wrapper">
-          <div class="description">
+          <!--  <div class="description">
             <p class="hola">Hola, me llamo</p>
             <h1 data-txtDark>
               David Francisco.
@@ -61,6 +61,12 @@
           </div>
           <div class="pic-me">
             <img src="./logos and vectors/Sections vectors/me/Untitled design.png" alt="web developer picture">
+          </div> -->
+          <div class="description">
+            <h1 data-txtDark>
+              <span class="hola">Hola, me llamo</span><br> David Francisco.
+            </h1>
+            <h2 class="soy">Soy desarrollador Front-end y amo desarrollar cosas para la web.</h2>
           </div>
         </div>
         <a href="#" class="btn-port">Portafolio</a>
@@ -68,11 +74,11 @@
 
       <!-- Portafolio Section -->
       <section class="sections portafolio">
+        <h2 class="sections-title">Portafolio</h2>
         <div class="portafolio-wrapper">
           <!-- <img class="port-img" src="./logos and vectors/Sections vectors/undraw_web_developer_p3e5.svg"
           alt="man with a laptop"> -->
           <!-- Projects -->
-          <h2 class="sections-title">Portafolio</h2>
           <figure class="card" data-bgDark>
             <img class="card-img" src="./logos and vectors/project-sample.PNG" alt="">
             <figcaption>
@@ -231,7 +237,7 @@
       </section>
     </section>
 
-    <hr>
+    <hr data-txtDark>
     <footer>
       <div class="social-feather-icons">
         <img src="./logos and vectors/Social media vectors/Feather icons/github.svg" alt="" class="social-icon-feather">
