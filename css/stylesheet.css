@@ -382,10 +382,7 @@ figcaption {
 
 .skills {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
-  margin: 0 auto;
-  justify-content: center;
 }
 
 .lang-wrapper {
@@ -526,7 +523,13 @@ footer {
 
 /* Media Queries */
 
-@media (min-width: 768px) {
+@media (min-width: 675px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Menu */
   .nav-ul--primary > li {
     margin-bottom: 6em;
   }
@@ -544,19 +547,22 @@ footer {
     font-size: 1.6rem;
   }
 
+  /* Intro Section */
+
   .hola,
   .soy {
-    font-size: 2rem;
+    font-size: 3.3rem;
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   .btn-port {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
+  /* Portafolio Secion */
   .portafolio {
     margin: 0 auto;
   }
@@ -567,6 +573,28 @@ footer {
     justify-content: center;
     gap: 0.6em;
     row-gap: 1.5em;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  figcaption p {
+    font-size: 1.3rem;
+    width: 90%;
+    margin: 0.9rem auto;
+  }
+
+  .tech {
+    font-size: 1rem;
+  }
+
+  .card-buttons button {
+    font-size: 0.9rem;
+  }
+
+  .sections-title {
+    font-size: 3rem;
   }
 
   .language-icon {
@@ -582,38 +610,46 @@ footer {
     padding: 0;
   }
 
+  /* About Section */
+
+  .about-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .about-wrapper img {
+    width: 60%;
+    align-self: flex-start;
+  }
+
+  .about-wrapper p {
+    width: 40%;
+    text-align: justify;
+  }
+
+  .skills-img {
+    display: none;
+  }
+
+  /* Contact Section */
+
   .social-media-icons {
     justify-content: space-evenly;
   }
 
+  .contact-img {
+    display: none;
+  }
+
   .form {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 820px) {
-  .intro-wrapper {
-    margin-bottom: 2em;
-    justify-content: center;
-  }
-
-  .pic-me {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
   }
 
-  .hola,
-  .soy {
-    font-size: 2.5rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  .btn-port {
-    font-size: 1.3rem;
+  label {
+    font-size: 1.8rem;
+    /* Footer */
   }
 }
 
