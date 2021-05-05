@@ -27,14 +27,15 @@
     </button>
 
     <header class="header" data-bgDark>
-      <div class="header-container" data-bgDark>
-        <a href="#" class="logo">
-          <h2 class="logo-text">DF</h2>
-          <!-- <img src="./logos and vectors/Logo/logo.svg" id="logo"> -->
-        </a>
-        <nav class="menu-bar" id="navbar" data-bgDark>
-          <ul class="nav-ul nav-ul--primary" data-txtDark>
-            <li class="nav-li" class="links"><a href="#portafolio" data-txtDark>Portafolio</a></li>
+      <div class="header-container container" data-bgDark>
+        <h2 class="logo-text">
+          <a href="#" class="logo">
+            DF
+          </a>
+        </h2>
+        <nav class="menu-bar" data-bgDark data-txtDark>
+          <ul data-txtDark class="nav-ul nav-ul--primary">
+            <li class="nav-li" class="links"><a href="#portafolio">Portafolio</a></li>
             <li class="nav-li"><a href="#skills" data-txtDark>Skills</a></li>
             <li class="nav-li"><a href="#about" data-txtDark>About</a></li>
             <li class="nav-li"><a href="#contact" data-txtDark>Contact</a></li>
@@ -44,7 +45,8 @@
             <li class="nav-li dark-btn">
               <button class="theme-btn">🌙</button>
             </li>
-            <button class="nav-li lang-btn" data-txtDark>EN</button>
+            <li class="nav-li lang-btn">
+              <a href="#about" data-txtDark>EN</a>
             </li>
           </ul>
         </nav>
@@ -53,7 +55,7 @@
 
     <section class="section">
       <!-- Intro Home -->
-      <section class="sections intro container">
+      <section id="intro" class="sections intro container" data-scroll-spy>
         <div class="intro-wrapper">
           <!--  <div class="description">
             <p class="hola">Hola, me llamo</p>
@@ -75,7 +77,7 @@
         </div>
       </section>
       <a href="#" class="btn-port">Portafolio</a>
-      <div class="intro-social" data-txtDark>
+      <div class="intro-social" data-txtDark data-scroll-spy>
         <div class="git intro-icons">
           <p><i class="fab fa-github"></i></p>
         </div>
@@ -91,7 +93,7 @@
       </div>
 
       <!-- Portafolio Section -->
-      <section class="sections portafolio container">
+      <section id="portafolio" class="sections portafolio container" data-scroll-spy>
         <h2 class="sections-title">Portafolio</h2>
         <div class="portafolio-wrapper">
           <!-- <img class="port-img" src="./logos and vectors/Sections vectors/undraw_web_developer_p3e5.svg"
@@ -178,7 +180,7 @@
       </section>
 
       <!-- Skills Section -->
-      <section class="sections skills container">
+      <section id="skills" class="sections skills container" data-scroll-spy>
         <h2 class="sections-title">Habilidades</h2>
 
         <div class="skills-img"><img src="./logos and vectors/Sections vectors/undraw_Code_review_re_woeb.svg" alt="">
@@ -216,7 +218,7 @@
       </section>
 
       <!-- About Section -->
-      <section class="sections about container">
+      <section id="about" class="sections about container" data-txtDark data-scroll-spy>
         <h2 class="sections-title">Sobre Mi</h2>
         <div class="about-wrapper">
           <img src="./logos and vectors/Sections vectors/undraw_about_me_wa29.svg" alt="about me">
@@ -228,7 +230,7 @@
       </section>
 
       <!-- Contact Section -->
-      <section class="sections contact container">
+      <section id="contact" class="sections contact container" data-scroll-spy>
         <h2 class="sections-title">Hablemos!</h2>
         <div class="contact-img">
           <img src="./logos and vectors/Sections vectors/contact.svg" alt="">

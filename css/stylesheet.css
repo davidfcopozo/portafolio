@@ -654,8 +654,86 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  .intro {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
   }
+
+  #toggle {
+    display: none;
+  }
+
+  .logo-text {
+    position: relative;
+    top: 10%;
+    left: 10%;
+  }
+
+  nav {
+    position: unset;
+    height: auto;
+    width: 100%;
+    transform: none;
+    box-shadow: 0 0 0 0;
+    justify-content: flex-end;
+  }
+
+  .nav-ul {
+    text-align: center;
+    height: 100%;
+  }
+
+  .nav-ul + .nav-ul {
+    margin-left: 2em;
+  }
+
+  .nav-li + .nav-li {
+    margin-left: 1em;
+  }
+
+  .nav-ul--primary > li {
+    margin: 0;
+  }
+
+  .nav-ul--primary,
+  .nav-ul--secondary {
+    display: flex;
+    visibility: visible;
+  }
+
+  .nav-ul--secondary {
+    position: relative;
+    margin: 0;
+  }
+
+  .nav-ul--primary a,
+  .nav-ul--secondary a {
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .theme-btn {
+    font-size: 1rem;
+    width: 1rem;
+  }
+
+  .nav-ul--secondary .lang-btn {
+    margin-left: 0.5em;
+  }
+
+  nav a {
+    text-decoration: none;
+    transition: 0.3s ease-in;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--blue-text);
+    transition: 0.3s ease-in;
+  }
+
+  /* Intro Section */
 
   .intro-wrapper {
     margin: 0 auto;
@@ -688,5 +766,10 @@ footer {
 
   .pic-me > img {
     justify-content: flex-end;
+  }
+
+  /* Portafolio Section */
+  .portafolio-wrapper {
+    gap: 1em;
   }
 }
