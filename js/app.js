@@ -1,6 +1,6 @@
 import mobileMenu from "./mobile-menu.js";
 import theme from "./theme.js";
-import scroll_spy from "./scroll_spy.js"
+import scroll_spy from "./scroll_spy.js";
 
 
 const d = document,

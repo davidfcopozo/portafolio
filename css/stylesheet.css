@@ -10,6 +10,10 @@
   --pseudo-background: #12232e;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -64,12 +68,6 @@ img {
 .hamburger-box span::after {
   background: var(--pseudo-background);
 }
-
-/* .hamburger-box span,
-.hamburger-box span::before,
-.hamburger-box span::after {
-  background: var(--grey-background);
-} */
 
 /* Header and Nav */
 
@@ -203,7 +201,14 @@ nav {
 
 nav a:hover,
 nav a:focus {
-  /* color: var(--blue-text); */
+  background: -webkit-linear-gradient(#4568dc, #b06ab3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: 0.3s ease-in;
+  opacity: 0.8;
+}
+
+.focused {
   background: -webkit-linear-gradient(#4568dc, #b06ab3);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -356,7 +361,7 @@ figcaption {
   display: block;
   border-radius: 10px 10px 0 0;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
 }
 
 .card-buttons {
@@ -708,7 +713,6 @@ footer {
 
   .nav-ul--primary a,
   .nav-ul--secondary a {
-    color: black;
     font-size: 1rem;
     font-weight: 600;
   }
@@ -724,12 +728,6 @@ footer {
 
   nav a {
     text-decoration: none;
-    transition: 0.3s ease-in;
-  }
-
-  nav a:hover,
-  nav a:focus {
-    color: var(--blue-text);
     transition: 0.3s ease-in;
   }
 
@@ -771,5 +769,11 @@ footer {
   /* Portafolio Section */
   .portafolio-wrapper {
     gap: 1em;
+  }
+
+  /* Skills Section */
+
+  .skills {
+    flex-direction: column;
   }
 }

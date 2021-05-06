@@ -10,14 +10,14 @@ export default function scrollSpy() {
       const id = entry.target.getAttribute("id");
 
       if(entry.isIntersecting){
-        d.querySelector(`a[data-scroll-spy][href="#${id}"]`).classList.add("active");
+        d.querySelector(`h2[data-scroll-spy][href="#${id}"]`).classList.add("focused");
       } else {
-        d.querySelector(`a[data-scroll-spy][href="#${id}"]`).classList.remove("active");
+        d.querySelector(`h2[data-scroll-spy][href="#${id}"]`).classList.remove("focused");
       }
     });
   }
   const observer = new IntersectionObserver(cb, {
-    threshold: 1,
+    threshold: [0.5, 0.75],
   });
 
   $sections.forEach((el) =>observer.observe(el));
