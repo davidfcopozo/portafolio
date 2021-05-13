@@ -100,12 +100,12 @@ img {
   margin: 0;
 }
 
-#logo {
+/* #logo {
   width: 110px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   justify-content: flex-start;
 }
-
+ */
 .active {
   visibility: visible;
   transition: ease-in-out 0.3s;
@@ -211,6 +211,7 @@ nav a:focus {
 
 section {
   scroll-margin-top: 5em;
+  min-height: 100vh;
 }
 
 .sections + .sections {
@@ -404,6 +405,7 @@ figcaption {
 
 .lang-title {
   text-align: center;
+  font-size: 0.9rem;
 }
 
 .fa-html5:hover,
@@ -637,11 +639,6 @@ footer {
     font-size: 3rem;
   }
 
-  /* .language-icon {
-    width: 150px;
-    margin-bottom: 2em;
-  } */
-
   .card {
     margin: 0;
   }
@@ -689,46 +686,59 @@ footer {
 
   label {
     font-size: 1.8rem;
-    /* Footer */
   }
 }
 
 @media (min-width: 1024px) {
-  .header-container {
+  /* Header */
+
+  .header {
     display: flex;
+    position: unset;
+    width: 100%;
+  }
+
+  .header-container {
+    /* width: 100%; */
+    left: unset;
+    /* background: rgb(108, 108, 238); */
     justify-content: space-between;
+  }
+
+  .logo-text {
+    position: unset;
+    margin-left: 5%;
   }
 
   #toggle {
     display: none;
   }
 
-  .logo-text {
-    position: relative;
-    top: 10%;
-    left: 10%;
-  }
+  /* Navigation Menu */
 
   nav {
+    display: flex;
     position: unset;
-    height: auto;
-    width: 100%;
     transform: none;
     box-shadow: 0 0 0 0;
     justify-content: flex-end;
+    margin-right: 5%;
   }
 
   .nav-ul {
-    text-align: center;
     height: 100%;
   }
 
   .nav-ul + .nav-ul {
-    margin-left: 2em;
+    margin-left: 1.5em;
   }
 
   .nav-li + .nav-li {
-    margin-left: 1em;
+    margin-left: 2em;
+  }
+
+  .nav-ul--primary {
+    align-items: center;
   }
 
   .nav-ul--primary > li {
@@ -741,24 +751,21 @@ footer {
     visibility: visible;
   }
 
-  .nav-ul--secondary {
-    position: relative;
-    margin: 0;
-  }
-
   .nav-ul--primary a,
   .nav-ul--secondary a {
+    align-items: center;
     font-size: 1rem;
     font-weight: 600;
   }
 
   .theme-btn {
     font-size: 1rem;
-    width: 1rem;
   }
 
   .nav-ul--secondary {
-    margin-left: 0.5em;
+    margin: 0;
+    position: unset;
+    align-items: center;
   }
 
   nav a {
@@ -766,15 +773,26 @@ footer {
     transition: 0.3s ease-in;
   }
 
+  /* Section */
+  section {
+    min-height: 100vh;
+  }
+
   /* Intro Section */
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .intro-social {
+    margin: 0.1em 0;
+  }
 
   .intro-wrapper {
     margin: 0 auto;
     display: flex;
-    margin-bottom: 2em;
     width: 80%;
     justify-content: center;
-    align-items: center;
   }
 
   .soy {
@@ -803,7 +821,7 @@ footer {
 
   /* Portafolio Section */
   .portafolio-wrapper {
-    gap: 1em;
+    gap: 2.5em;
   }
 
   /* Skills Section */
