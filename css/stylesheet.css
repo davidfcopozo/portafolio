@@ -166,7 +166,7 @@ nav {
 }
 
 .nav-ul--primary > li {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .nav-ul--secondary li {
@@ -180,14 +180,14 @@ nav {
 
 .theme-btn {
   display: flex;
-  font-size: 0.9rem;
-  width: 0.9rem;
+  font-size: 2rem;
   padding: 0;
-  margin: 0;
+  margin: 0 1em 0 0;
   background: transparent;
   border: none;
   outline: none;
   justify-content: center;
+  cursor: pointer;
 }
 
 nav a:hover,
@@ -210,7 +210,7 @@ nav a:focus {
 /* Sections */
 
 section {
-  scroll-margin-top: 5em;
+  scroll-margin-top: 3em;
   min-height: 100vh;
 }
 
@@ -233,7 +233,6 @@ section {
 
 .hola,
 .soy {
-  /* margin-bottom: 2.5em; */
   font-size: 2rem;
   font-weight: 700;
 }
@@ -275,6 +274,7 @@ h1 {
 .fab,
 .far {
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .btn-port {
@@ -372,6 +372,7 @@ figcaption {
   padding: 0.35em 0.7em;
   border-radius: 100px;
   border: 2px solid var(--purp-text);
+  cursor: pointer;
 }
 
 .card-buttons button {
@@ -390,8 +391,7 @@ figcaption {
   color: var(--navy-blue);
   display: flex;
   flex-wrap: wrap;
-  gap: 6em;
-  justify-content: center;
+  gap: 2em;
   margin: 0 auto;
 }
 
@@ -400,7 +400,7 @@ figcaption {
 }
 
 .language-icon {
-  font-size: 11em;
+  font-size: 5em;
 }
 
 .lang-title {
@@ -576,17 +576,17 @@ footer {
 
   /* Menu */
   .nav-ul--primary > li {
-    margin-bottom: 6em;
+    margin-bottom: 3em;
   }
 
   .nav-ul--primary a {
     font-size: 3rem;
   }
 
-  .theme-btn {
-    font-size: 1.5rem;
-    width: 1.5rem;
-    cursor: pointer;
+  /* Section */
+
+  section {
+    scroll-margin-top: 2em;
   }
 
   /* Intro Section */
@@ -607,6 +607,7 @@ footer {
   /* Portafolio Secion */
   .portafolio {
     margin: 0 auto;
+    scroll-margin-top: 3em;
   }
 
   .portafolio-wrapper {
@@ -645,6 +646,16 @@ footer {
   .card + .card {
     margin: 0;
     padding: 0;
+  }
+
+  /* Skills */
+
+  .language-icon {
+    font-size: 9em;
+  }
+
+  .lang-wrapper {
+    gap: 2.5em;
   }
 
   /* About Section */
@@ -828,5 +839,9 @@ footer {
 
   .skills {
     flex-direction: column;
+  }
+
+  .language-icon {
+    font-size: 11em;
   }
 }
