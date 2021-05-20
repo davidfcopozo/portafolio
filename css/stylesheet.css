@@ -90,13 +90,16 @@ img {
 
 .logo {
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 
-.logo-text {
-  font-family: var(--audiowide);
-  font-size: 2rem;
-  padding: 0.2em;
-  margin: 0;
+#logo {
+  position: relative;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 15%;
 }
 
 .active {
@@ -222,6 +225,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .hola,
@@ -232,7 +236,7 @@ section {
 
 .hola {
   font-family: var(--audiowide);
-  color: #5596bf;
+  color: var(--blue-text);
   margin: 0;
 }
 
@@ -577,6 +581,15 @@ footer {
     margin: 0 auto;
   }
 
+  .logo {
+    justify-content: center;
+  }
+
+  #logo {
+    justify-content: center;
+    width: 15%;
+  }
+
   /* Menu */
   .nav-ul--primary > li {
     margin-bottom: 3em;
@@ -722,9 +735,9 @@ footer {
     justify-content: space-between;
   }
 
-  .logo-text {
-    position: unset;
-    margin-left: 5%;
+  .logo {
+    justify-content: space-between;
+    margin-left: 4%;
   }
 
   #toggle {
