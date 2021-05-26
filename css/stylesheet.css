@@ -24,6 +24,9 @@ body {
   font-family: var(--opensans);
   font-weight: 550;
   background: linear-gradient(to right, #ffffff, #ece9e6);
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 h1,
