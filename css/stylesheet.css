@@ -98,14 +98,8 @@ img {
   text-decoration: none;
   display: flex;
   justify-content: center;
-}
-
-#logo {
-  position: relative;
-  justify-content: center;
-  top: 0;
-  left: 0;
   width: 15%;
+  align-items: flex-start;
 }
 
 .active {
