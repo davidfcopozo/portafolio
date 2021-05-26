@@ -213,6 +213,7 @@ nav a:focus {
 section {
   scroll-margin-top: 3em;
   min-height: 100vh;
+  scroll-behavior: smooth;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
