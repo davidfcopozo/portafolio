@@ -23,8 +23,6 @@ body {
   font-family: var(--opensans);
   font-weight: 550;
   background: linear-gradient(to right, #ffffff, #ece9e6);
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 
 h1,
@@ -627,9 +625,9 @@ footer {
 
   /* Section */
 
-  section {
+  /*  section {
     scroll-margin-top: 2em;
-  }
+  } */
 
   /* Intro Section */
 
