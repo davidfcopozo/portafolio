@@ -13,7 +13,6 @@
 
 html {
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -23,6 +22,7 @@ body {
   font-family: var(--opensans);
   font-weight: 550;
   background: linear-gradient(to right, #ffffff, #ece9e6);
+  overflow-y: scroll;
 }
 
 h1,
@@ -207,7 +207,7 @@ nav a:focus {
 /* Sections */
 
 section {
-  scroll-margin-top: 4rem;
+  scroll-margin-top: 3em;
   min-height: 100vh;
 }
 
@@ -607,6 +607,7 @@ footer {
 
   .logo {
     justify-content: center;
+    width: 35%;
   }
 
   #logo {
