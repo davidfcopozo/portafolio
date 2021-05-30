@@ -10,7 +10,7 @@ w =window;
 d.addEventListener("DOMContentLoaded", ()=>{
   mobileMenu(".hamburger-btn", ".menu-bar a");
   scroll_spy();
-  smoothScroll();
+  smoothScroll("a[data-scroll-spy]");
 });
 
 
