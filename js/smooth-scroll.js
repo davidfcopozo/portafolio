@@ -8,12 +8,12 @@ $sections.forEach(el => el.addEventListener("click", (e)=>{
   e.preventDefault();
 
   if(targetId != "#intro") {
-    window.scroll({
+    window.scrollTo({
         top: d.querySelector(targetId).offsetTop - 40,
         behavior: "smooth"
       })
     } else {
-    window.scroll({
+    window.scrollTo({
         top: d.querySelector(targetId).offsetTop - 98,
         behavior: "smooth"
       })
