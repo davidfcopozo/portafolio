@@ -10,12 +10,12 @@ $sections.forEach(el => el.addEventListener("click", (e)=>{
   if(targetId != "#intro") {
     window.scroll({
         top: d.querySelector(targetId).offsetTop - 40,
-        behavior: "auto"
+        behavior: "smooth"
       })
     } else {
     window.scroll({
         top: d.querySelector(targetId).offsetTop - 98,
-        behavior: "auto"
+        behavior: "smooth"
       })
 
   }
