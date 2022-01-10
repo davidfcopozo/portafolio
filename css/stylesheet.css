@@ -601,6 +601,12 @@ footer {
 
 /* Set media queries for 672px and down to fit content */
 
+@media (max-width: 464px) {
+  .header-container {
+    height: 5vh;
+  }
+}
+
 @media (max-width: 764px) {
   .nav-ul--primary > li {
     margin-bottom: 3em;
