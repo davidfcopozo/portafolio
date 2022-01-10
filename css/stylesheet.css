@@ -11,11 +11,6 @@
   --transition: ease-in-out 0.3s;
 }
 
-html {
-  /* overflow-y: scroll;
-  scroll-behavior: smooth; */
-}
-
 body {
   box-sizing: border-box;
   margin: 0;
@@ -38,6 +33,7 @@ h6 {
 img {
   width: 100%;
 }
+
 .intro-social a,
 .footer-social a {
   text-decoration: none;
@@ -67,6 +63,11 @@ img {
   margin-bottom: 0.5em;
   z-index: 1000;
   background: transparent;
+}
+
+.is-active.hamburger-inner,
+.is-active.hamburger-inner::after {
+  background-color: red;
 }
 
 .hamburger-box span,
@@ -99,7 +100,8 @@ img {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  width: 15%;
+  width: 12%;
+  height: inherit;
   align-items: flex-start;
 }
 
@@ -219,7 +221,7 @@ section {
 
 .sections-title {
   color: var(--blue-text);
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .description {
@@ -495,7 +497,7 @@ figcaption {
 .form {
   display: flex;
   flex-direction: column;
-  row-gap: 1.5em;
+  row-gap: 1.3em;
 }
 
 label {
@@ -534,6 +536,7 @@ label {
   text-align: center;
   border: none;
   outline: none;
+  margin-top: 0.2rem;
 }
 
 .form-btn:hover {
@@ -595,6 +598,38 @@ footer {
 
 /* Media Queries */
 
+/* Set media queries for 672px and down to fit content */
+
+@media (max-width: 764px) {
+  .nav-ul--primary > li {
+    margin-bottom: 3em;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 1223px) {
+  .nav-ul--secondary {
+    margin: 2% 2% 0 0;
+  }
+}
+
+@media (min-width: 465px) {
+  .hola,
+  .soy {
+    font-size: 1.8rem;
+  }
+  .logo {
+    max-width: 8%;
+  }
+
+  .hamburger-btn {
+    right: 5%;
+  }
+}
+
 @media (min-width: 675px) {
   .container {
     width: 90%;
@@ -607,21 +642,16 @@ footer {
 
   .logo {
     justify-content: center;
-    width: 35%;
   }
 
   #logo {
     justify-content: center;
-    width: 15%;
+    margin: 0 auto;
   }
 
   /* Menu */
   .nav-ul--primary > li {
     margin-bottom: 3em;
-  }
-
-  .nav-ul--primary a {
-    font-size: 3rem;
   }
 
   /* Section */
@@ -634,20 +664,15 @@ footer {
 
   .hola,
   .soy {
-    font-size: 3.3rem;
+    font-size: 2.1rem;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 
   .btn-port {
-    font-size: 1.3rem;
     transition: var(--transition);
-  }
-
-  .btn-port:hover {
-    opacity: 0.8;
   }
 
   /* Portafolio Secion */
@@ -665,11 +690,11 @@ footer {
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   figcaption p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     width: 90%;
     margin: 0.9rem auto;
   }
@@ -684,6 +709,10 @@ footer {
 
   .sections-title {
     font-size: 3rem;
+  }
+
+  .contact-title {
+    margin-bottom: 0;
   }
 
   .card {
@@ -747,7 +776,13 @@ footer {
   }
 
   label {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 765px) {
+  .logo {
+    max-width: 6%;
   }
 }
 

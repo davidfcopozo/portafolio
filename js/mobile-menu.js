@@ -15,8 +15,11 @@ export default function mobileMenu($humburgerBtn, menuLinks) {
     }
     
    if($mobileMenupanel.classList.contains("active") && e.target.id !== "navbar" && e.target.id !== "toggle" && e.target.id !== "inner-toggle" && e.target.id !== "in-toggle") {
+    if(e.target.matches(menuLinks)){
       $mobileMenupanel.classList.remove("active");
       d.querySelector($humburgerBtn).classList.remove("is-active");
+
+    }
     } 
     
   });

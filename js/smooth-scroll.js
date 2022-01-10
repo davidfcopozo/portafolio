@@ -2,18 +2,24 @@ const d = document;
 
 export default function smoothscroll(target) {
   const $sections = d.querySelectorAll(target);
- /*  const id = target.getAttribute("id");
-  console.log(id) */
 
 $sections.forEach(el => el.addEventListener("click", (e)=>{
   const targetId = e.currentTarget.getAttribute("href");
-  /* 
-   */
   e.preventDefault();
-  window.scrollTo({
-      top: d.querySelector(targetId).offsetTop,
-      behavior: "smooth"
-    })
+
+  if(targetId != "#intro") {
+    window.scroll({
+        top: d.querySelector(targetId).offsetTop - 40,
+        behavior: "smooth"
+      })
+    } else {
+    window.scroll({
+        top: d.querySelector(targetId).offsetTop - 98,
+        behavior: "smooth"
+      })
+
+  }
+    console.log(d.querySelector(targetId).offsetTop)
 }))
 
   

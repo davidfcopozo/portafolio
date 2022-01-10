@@ -28,9 +28,7 @@ export default function theme(darkModeBtn, bgDarkClass, txtDarkClass) {
 
    $txtSelectors.forEach(el => el.classList.add(txtDarkClass));
 
-   
-
-       ls.setItem("theme", "dark");
+   ls.setItem("theme", "dark");
  }
 
  d.addEventListener("click", (e)=>{

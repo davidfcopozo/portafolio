@@ -29,7 +29,9 @@
     <header class="header" data-bgDark>
       <div class="header-container container" data-bgDark>
         <div class="logo">
-          <img id="logo" src="./logos and vectors/Logo/Logo11.png" alt="">
+          <a href="#intro" id="link-logo" data-scroll-spy>
+            <img id="logo" src="./logos and vectors/Logo/Logo11.png" alt="David Francisco Logo">
+          </a>
         </div>
         <nav class="menu-bar" data-bgDark>
           <ul class="nav-ul nav-ul--primary">
@@ -52,7 +54,7 @@
 
     <section class="section">
       <!-- Intro Home -->
-      <section id="intro" class="sections intro container">
+      <section id="intro" class="sections intro container" data-scroll-spy>
         <div class="intro-wrapper">
 
           <div class="description">
@@ -64,6 +66,7 @@
           </div>
         </div>
         <a href="#portafolio" class="btn-port">Portafolio</a>
+
         <div class="intro-social" data-txtDark data-scroll-spy>
           <div class="git intro-icons">
             <p><a href="https://github.com/davidfcopozo" target="_blank"><i class="fab fa-github intro-icons"></i></a>
@@ -121,7 +124,6 @@
               <h3 data-txtDark>Project 2</h3>
               <p data-txtDark>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum aliquid eius
                 voluptatibus.
-                A Responsive portafolio website designed and built with love.
               </p>
               <div class="tech-btn">
                 <div class="tech-use">
@@ -230,7 +232,7 @@
 
       <!-- Contact Section -->
       <section id="contact" class="sections contact container" data-scroll-spy>
-        <h2 class="sections-title">Let's talk!</h2>
+        <h2 class="sections-title contact-title">Let's talk!</h2>
         <div class="contact-img">
           <img src="./logos and vectors/Sections vectors/contact.svg" alt="">
         </div>
@@ -242,6 +244,7 @@
             <p class="alt">Alternatively, you can also drop-in a mail here!
             </p>
           </div>
+
           <div class="name">
             <label data-txtDark for="name">Name:</label><br>
             <input type="text" id="name" name="name"><br>
