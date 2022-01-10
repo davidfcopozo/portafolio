@@ -7,11 +7,14 @@ import smoothScroll from "./smooth-scroll.js";
 const d = document,
 w =window;
 
-d.addEventListener("DOMContentLoaded", ()=>{
-  mobileMenu(".hamburger-btn", ".menu-bar a");
+
+ 
+ d.addEventListener("DOMContentLoaded", ()=>{
+  mobileMenu(".hamburger-btn", ".menu-bar a", "body");
   scroll_spy();
   smoothScroll("a[data-scroll-spy]");
 });
+
 
 
 

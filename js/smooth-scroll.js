@@ -6,8 +6,10 @@ export default function smoothscroll(target) {
 $sections.forEach(el => el.addEventListener("click", (e)=>{
   const targetId = e.currentTarget.getAttribute("href");
   e.preventDefault();
+  
 
   if(targetId != "#intro") {
+    
     window.scrollTo({
         top: d.querySelector(targetId).offsetTop - 40,
         behavior: "smooth"
@@ -19,7 +21,7 @@ $sections.forEach(el => el.addEventListener("click", (e)=>{
       })
 
   }
-    console.log(d.querySelector(targetId).offsetTop)
+    
 }))
 
   
