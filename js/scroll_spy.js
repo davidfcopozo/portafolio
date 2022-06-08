@@ -17,7 +17,7 @@ export default function scrollSpy() {
     });
   }
   const observer = new IntersectionObserver(cb, {
-    threshold: [0.7, 0.75],
+    threshold: [0.8, 0.75],
   });
 
   $sections.forEach((el) =>observer.observe(el));

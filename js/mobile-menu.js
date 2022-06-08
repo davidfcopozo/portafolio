@@ -1,6 +1,6 @@
 
 
-export default function mobileMenu($humburgerBtn, menuLinks, $secions) {
+export default function mobileMenu($humburgerBtn, menuLinks, $secions, $body) {
   const d = document;
   d.addEventListener("click", (e)=>{
     const $mobileMenupanel = d.querySelector(".menu-bar");
@@ -20,7 +20,7 @@ export default function mobileMenu($humburgerBtn, menuLinks, $secions) {
     }
     
    if($mobileMenupanel.classList.contains("active") && e.target.id !== "navbar" && e.target.id !== "toggle" && e.target.id !== "inner-toggle" && e.target.id !== "in-toggle") {
-    if(e.target.matches(menuLinks) || e.target.matches($secions)){
+    if(e.target.matches(menuLinks) || e.target.matches($secions)|| e.target.matches($body)){
       $mobileMenupanel.classList.remove("active");
       d.querySelector($humburgerBtn).classList.remove("is-active");
     }

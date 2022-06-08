@@ -1,5 +1,6 @@
 :root {
   --purp-text: #9475af;
+  --psuedo-purp-text: #9475af;
   --purp-btn: #7b86bc;
   --navy-blue: #12232e;
   --grey-text: #c4c4c4;
@@ -422,7 +423,7 @@ figcaption {
 }
 
 .language-icon {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .lang-title {
@@ -550,7 +551,7 @@ label {
 #message:focus {
   outline: none;
   border: none;
-  border-bottom: solid 5px var(--purp-text);
+  border-bottom: solid 5px var(--psuedo-purp-text);
   transition: var(--transition);
 }
 
@@ -597,6 +598,10 @@ footer {
   color: var(--grey-text);
 }
 
+.none {
+  display: none;
+}
+
 /* Media Queries */
 
 /* Set media queries for 672px and down to fit content */
@@ -604,6 +609,28 @@ footer {
 @media (max-width: 464px) {
   .header-container {
     height: 5vh;
+  }
+
+  .header {
+    margin-bottom: 5em;
+  }
+
+  .hola,
+  .soy {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .sections-title {
+    font-size: 1.6rem;
+  }
+
+  .skills-img > img {
+    width: 90%;
+    margin-top: 0%;
   }
 }
 
@@ -613,7 +640,7 @@ footer {
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -624,6 +651,10 @@ footer {
 }
 
 @media (min-width: 465px) {
+  .header {
+    margin-bottom: 5em;
+  }
+
   .hola,
   .soy {
     font-size: 1.8rem;
@@ -933,7 +964,7 @@ footer {
   }
 
   .language-icon {
-    font-size: 11em;
+    font-size: 10.2em;
   }
 
   /* Contact */
