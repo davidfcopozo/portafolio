@@ -59,7 +59,7 @@
 
           <div class="description">
             <p class="hola">Hello, I am</p>
-            <h1 data-txtDark>
+            <h1 class="david" data-txtDark>
               David Francisco.
             </h1>
             <h2 class="soy">I am a Frontend Developer that loves building things for the web.</h2>
@@ -102,6 +102,7 @@
                   <a href="#" title="HTML" class="tech">HTML</a>
                   <a href="#" title="CSS" class="tech">CSS</a>
                   <a href="#" title="Javascritp" class="tech">Javascritp</a>
+                  <a href="#" title="Javascritp" class="tech">Netlify</a>
                 </div>
                 <div class="card-buttons">
                   <button class="card-btn">
@@ -130,6 +131,7 @@
                   <a href="#" title="HTML" class="tech">HTML</a>
                   <a href="#" title="CSS" class="tech">CSS</a>
                   <a href="#" title="Javascritp" class="tech">React JS</a>
+                  <a href="#" title="Javascritp" class="tech">Firebase</a>
                 </div>
                 <div class="card-buttons">
                   <button class="card-btn" onclick="window.open(`https://github.com/davidfcopozo/budget-app`)">
@@ -147,25 +149,26 @@
           </figure>
 
           <figure class="card" data-bgDark>
-            <img class="card-img" src="./logos and vectors/project-sample.PNG" alt="">
+            <img class="card-img" src="./logos and vectors/Shortlify.PNG" alt="Shortlify image">
             <figcaption>
-              <h3 data-txtDark>Project 3</h3>
-              <p data-txtDark>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia nostrum aliquid eius
-                voluptatibus.
+              <h3 data-txtDark>Shortlify</h3>
+              <p data-txtDark>This is s Frontend mentor's Link Shortener App challenge.
               </p>
               <div class="tech-btn">
                 <div class="tech-use">
-                  <a href="#" title="HTML" class="tech">HTML</a>
-                  <a href="#" title="CSS" class="tech">CSS</a>
+                  <a href="#" title="HTML" class="tech">React JS</a>
+                  <a href="#" title="CSS" class="tech">SASS/SCSS</a>
                   <a href="#" title="Javascritp" class="tech">Javascritp</a>
+                  <a href="#" title="Javascritp" class="tech">API</a>
+                  <a href="#" title="Javascritp" class="tech">Githup Pages</a>
                 </div>
                 <div class="card-buttons">
-                  <button class="card-btn">
+                  <button class="card-btn" onclick="window.open(`https://github.com/davidfcopozo/url-shortener-app`)">
                     <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.png"
                       alt="github logo">
                     Source Code
                   </button>
-                  <button class="card-btn">
+                  <button class="card-btn" onclick="window.open(`https://davidfcopozo.github.io/url-shortener-app/`)">
                     <i class="fas fa-podcast"></i> Live
                     Demo
                   </button>
@@ -199,10 +202,10 @@
             <h3 class="lang-title">JavaScritp</h3>
           </div>
 
-          <!--  <div class="language-wrapper">
+          <div class="language-wrapper">
             <i class="fab fa-sass language-icon"></i>
             <h3 class="lang-title">Sass</h3>
-          </div> -->
+          </div>
 
           <div class="language-wrapper">
             <i class="fab fa-react language-icon"></i>
@@ -237,14 +240,11 @@
           <img src="./logos and vectors/Sections vectors/contact.svg" alt="">
         </div>
 
-        <!-- action="https://formsubmit.co/davidfco.pozo@hotmail.com"
-                  method="POST" -->
-
         <form target="_blank" class="form" data-txtDark`>
           <div class="send-email" onchange="validationForm()">
-            <p>Feel free to <a href="mailto:davidfco.pozo@hotmail.com" data-txtDark>send me an e-mail</a>
+            <p data-txtDark>Feel free to <a href="mailto:davidfco.pozo@hotmail.com" data-txtDark>send me an e-mail</a>
             </p>
-            <p class="alt">Alternatively, you can also drop-in a mail here!
+            <p data-txtDark class="alt">Alternatively, you can also drop-in a mail here!
             </p>
           </div>
 
@@ -261,20 +261,34 @@
               title="Please provide a valid E-mail Address. Ex: youremail@example.com" required><br>
           </div>
 
-          <label data-txtDark for="message">Message:</label>
-          <textarea name="message" id="message" cols="30" rows="10" data-pattern="^.{1,255}$" required></textarea>
+          <div class="message">
+            <label data-txtDark for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" data-pattern="^.{1,255}$" required></textarea>
+          </div>
 
 
           <input class="form-btn" type="submit" value="Send">
           <div class="form-loader">
             <img class="none" src="./logos and vectors/rings.svg" alt="">
           </div>
-          <div class="form-response none">
-            <p>The message had been sent successfully!</p>
-          </div>
         </form>
       </section>
     </section>
+
+    <!-- Form Modal -->
+    <div class="box">
+      <div class="modal-container" id="m3-o">
+        <div data-bgDark class="modal" style="--m-shadow: 0 0 10rem 0">
+          <img src="" alt="Modal image" class="modal-img">
+          <h1 data-txtDark class="modal-title">Thank You!</h1>
+          <p data-txtDark class="modal-text">The form was submitted successfully. <br> We will get back to you as soon
+            as possible.
+          </p>
+          <button data-txtDark class="modal-btn">OK &rarr;</button>
+
+        </div>
+      </div>
+    </div>
 
     <hr data-txtDark>
     <footer>
