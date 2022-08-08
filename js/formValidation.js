@@ -21,13 +21,16 @@ const $modal = d.querySelector(".modal-container"),
   $form = d.querySelector(".form"),
   $modalTitle = d.querySelector(".modal-title"),
   $modalText = d.querySelector(".modal-text"),
-  $modalImg = d.querySelector(".modal-img");
+  $modalImg = d.querySelector(".modal-img"),
+  $loader = d.querySelector(".none");
 
 d.addEventListener("keyup", formValidation);
+
 d.addEventListener("submit", (e) => {
   const $name = d.getElementById("name").value,
     $message = d.getElementById("message").value,
     $email = d.getElementById("email").value;
+  $loader.style.display = "flex";
   e.preventDefault();
 
   fetch("https://formsubmit.co/ajax/davidfco.pozo@hotmail.com", {
@@ -45,6 +48,7 @@ d.addEventListener("submit", (e) => {
     .then((res) => (res.ok ? res.json() : Promise.reject(res)))
     .then((json) => {
       console.log(json);
+      $loader.style.display = "none";
       $modalImg.src = "./logos and vectors/checkmark-64.svg";
       $modal.classList.add("active-modal");
       $box.classList.add("active-modal");
@@ -52,6 +56,7 @@ d.addEventListener("submit", (e) => {
     .catch((err) => {
       $modalImg.src = "./logos and vectors/xMark.svg";
       console.log(err);
+      $loader.style.display = "none";
       $modalTitle.innerHTML = "Sorry!";
       $modalText.innerText = err.message;
       $modal.classList.add("active-modal");

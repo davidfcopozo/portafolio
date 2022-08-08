@@ -36,8 +36,8 @@
     hsl(0, 0%, 100%),
     hsl(30, 14%, 91%)
   );
-  --p-size: clamp(1rem, 4.5vh, 4rem);
-  --h1-size: clamp(2rem, 5vh, 6rem);
+  --p-size: clamp(1rem, 1rem + 3vh, 6rem);
+  --h1-size: clamp(2rem, 1rem + 4vh, 8rem);
 }
 
 body {
@@ -130,7 +130,7 @@ img {
   text-decoration: none;
   display: flex;
   justify-content: center;
-  max-width: 5%;
+  max-width: 15%;
   height: inherit;
   align-items: flex-start;
 }
@@ -341,6 +341,7 @@ h1 {
   text-align: center;
   margin: 2rem 0 1rem 50%;
   transform: translateX(-50%);
+  max-width: 20vh;
 }
 
 /* Projects Section */
@@ -529,6 +530,9 @@ figcaption {
 }
 
 /* Contact */
+.contact {
+  margin-left: 0;
+}
 
 .send-email * {
   font-size: 1.4rem;
@@ -541,7 +545,7 @@ figcaption {
 }
 
 .send-email P {
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .alt {
@@ -597,6 +601,7 @@ label {
   outline: none;
   margin-top: 0.2rem;
   cursor: pointer;
+  max-width: 50%;
 }
 
 .form-btn:hover {
@@ -663,7 +668,9 @@ footer {
 /* Form Validation */
 
 .form-loader {
-  display: inline;
+  display: flex;
+  width: 30%;
+  margin-inline: auto;
 }
 
 /* Form Modal */
@@ -681,21 +688,18 @@ footer {
 
 .modal-container {
   position: fixed;
-  right: 30%;
-  top: 20%;
   z-index: 10;
   display: none;
-  justify-content: center;
   align-self: center;
-  width: 40%;
+  width: 80vw;
   height: auto;
   text-align: center;
-  transition: all 0.5s ease-in-out;
 }
 
 .active-modal {
   display: flex;
-  transition: all 0.5s ease-in;
+  justify-content: center;
+  transition: all 1s ease-in-out;
 }
 
 .modal {
@@ -707,21 +711,21 @@ footer {
   position: relative;
   overflow: hidden;
   border: 2px solid gray;
+  align-self: center;
+  transition: all 1s ease-in-out;
 }
 
 .modal-title {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vh, 3rem);
 }
 
 .modal-text {
-  padding: 0 4rem;
+  font-size: clamp(1.2rem, 3vh, 2rem);
   margin-top: 2rem;
-
-  font-size: 1.2rem;
 }
 
 .modal-btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1rem 1.6rem;
   border: 1px solid var(--modal-border-color);
   border-radius: 100rem;
@@ -751,27 +755,7 @@ footer {
 
 /* Media Queries */
 
-/* Set media queries for 672px and down to fit content */
-
 /* **************************************************************************************************** */
-
-@media (min-width: 350px) {
-  .modal-container {
-    right: 20%;
-    top: 20%;
-    width: 60%;
-  }
-  .modal-title {
-    font-size: 1rem;
-  }
-
-  .modal-text {
-    justify-content: center;
-    font-size: 0.8rem;
-    text-align: center;
-    width: 100%;
-  }
-}
 
 @media (min-width: 675px) {
   .container {
@@ -785,6 +769,7 @@ footer {
 
   .logo {
     justify-content: center;
+    max-width: 10%;
   }
 
   #logo {
@@ -828,13 +813,13 @@ footer {
   }
 
   figcaption p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     width: 90%;
     margin: 0.9rem auto;
   }
 
   .tech {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .card-buttons button {
@@ -895,6 +880,7 @@ footer {
   .send-email {
     margin: 0;
     grid-column: 1/3;
+    /* margin-left: 1rem; */
   }
 
   .social-media-icons {
@@ -906,8 +892,11 @@ footer {
   }
 
   .form {
-    width: 80%;
     margin: 0 auto;
+  }
+
+  .form-btn {
+    margin-inline: auto;
   }
 
   label {
@@ -927,6 +916,7 @@ footer {
   .logo {
     justify-content: space-between;
     margin-left: 4%;
+    max-width: 5%;
   }
 
   #toggle {
