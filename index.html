@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="David Francisco's Portfolio Website">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="preload" as="font" type="font/woff2"
+    crossorigin>
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.webp">
+  <link rel="icon" type="image/webp" sizes="32x32" href="/favicon-32x32.webp">
+  <link rel="icon" type="image/webp" sizes="16x16" href="/favicon-16x16.webp">
+  <link rel="manifest" href="/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans" rel="preload" as="font"
+    type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="./js/app.js" type="module" defer></script>
+
+  <title>David Francisco</title>
+</head>
+
+<body data-bgDark>
+  <div class="container" data-bgDark>
+
+    <button class="hamburger-btn hamburger hamburger--emphatic" type="button" id="toggle">
+      <span class="hamburger-box" id="inner-toggle">
+        <span class="hamburger-inner" id="in-toggle"></span>
+      </span>
+    </button>
+
+    <header class="header" data-bgDark>
+      <div class="header-container container" data-bgDark>
+        <div class="logo">
+          <a href="#intro" id="link-logo" data-scroll-spy>
+            <img id="logo" src="./logos and vectors/Logo/Logo11.webp" alt="David Francisco Logo">
+          </a>
+        </div>
+        <nav class="menu-bar" data-bgDark>
+          <ul class="nav-ul nav-ul--primary">
+            <li class="nav-li"><a data-scroll-spy data-txtDark href="#portafolio">Portfolio</a></li>
+            <li class="nav-li"><a data-scroll-spy data-txtDark href="#skills">Skills</a></li>
+
+            <li class="nav-li"><a data-scroll-spy data-txtDark href="#about">About</a></li>
+
+            <li class="nav-li"><a data-scroll-spy data-txtDark href="#contact">Contact</a></li>
+            <li class="nav-li"><a data-txtDark
+                href="https://drive.google.com/file/d/1SZ-DFOn9L55I-IY458Pz3jWNMvMf-vBm/view?usp=sharing"
+                target="_blank">Resume</a></li>
+          </ul>
+
+          <ul class="nav-ul nav-ul--secondary">
+            <li class="nav-li dark-btn">
+              <button class="theme-btn">🌙</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section">
+      <!-- Intro Home -->
+      <section id="intro" class="sections intro container" data-scroll-spy>
+        <div class="intro-wrapper">
+          <div class="intro-icon">
+            <div class="david-emoji">
+              <img src="./logos and vectors/Sections vectors/david-francisco.png" alt="David Francisco's Emoji">
+            </div>
+          </div>
+          <div class="description">
+            <p class="hola">Hello, I am</p>
+            <h1 class="david" data-txtDark>
+              David Francisco.
+            </h1>
+            <h2 class="soy">I am a Frontend Developer that loves building things for the web.</h2>
+          </div>
+        </div>
+        <a href="#portafolio" class="btn-port" data-scroll-spy>Portfolio</a>
+
+        <div class="intro-social" data-txtDark data-scroll-spy>
+          <div class="git intro-icons">
+            <p><a href="https://github.com/davidfcopozo" target="_blank"><i class="fab fa-github intro-icons"></i></a>
+            </p>
+          </div>
+          <div class="twitter intro-icons">
+            <p><a href="https://twitter.com/daidaicodes" target="_blank"><i class="fab fa-twitter"></i></a></p>
+          </div>
+          <div class="linkedin intro-icons">
+            <p><a href="https://www.linkedin.com/in/david-f-pozo-328a6620b/" target="_blank"><i
+                  class="fab fa-linkedin"></i></a></p>
+          </div>
+          <div class="email intro-icons">
+            <p><a href="mailto:davodfco.pozo@hotmail.com"><i class="far fa-envelope"></i></a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portafolio Section -->
+      <section id="portafolio" class="sections portafolio container" data-scroll-spy>
+        <h2 class="sections-title">Portfolio</h2>
+        <div class="portafolio-wrapper">
+          <!-- Projects -->
+          <figure class="card" data-bgDark>
+            <img class="card-img" src="./logos and vectors/myportafolio.webp" alt="">
+            <figcaption>
+              <h3 data-txtDark>My Portfolio Website</h3>
+              <p data-txtDark>A Responsive portfolio website designed and built with love. It features scrollSpy & dark
+                and light theme switching using Local Storage.
+              </p>
+              <div class="tech-btn">
+                <div class="tech-use">
+                  <div class="tech">HTML</div>
+                  <div class="tech">CSS</div>
+                  <div class="tech">Javascritp</div>
+                  <div class="tech">Vercel</div>
+                </div>
+                <div class="card-buttons">
+                  <button class="card-btn">
+                    <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.webp"
+                      alt="github logo">
+                    Source Code
+                  </button>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card" data-bgDark>
+            <img class="card-img" src="./logos and vectors/budget-app.webp" alt="">
+            <figcaption>
+              <h3 data-txtDark>Budget Buddy</h3>
+              <p data-txtDark>This is a budget app I build out of a YouTube Video challenge with some tweaks of mine,
+                like the multilanguage and dark theme switches features.
+              </p>
+              <div class="tech-btn">
+                <div class="tech-use">
+                  <div class="tech">HTML</div>
+                  <div class="tech">CSS</div>
+                  <div class="tech">React JS</div>
+                  <div class="tech">Firebase</div>
+                </div>
+                <div class="card-buttons">
+                  <button class="card-btn" onclick="window.open(`https://github.com/davidfcopozo/budget-app`)">
+                    <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.webp"
+                      alt="github logo">
+                    Source Code
+                  </button>
+                  <button class="card-btn" onclick="window.open(`https://budget-buddy-d0db6.web.app/`)">
+                    <i class="fas fa-podcast"></i> Live
+                    Demo
+                  </button>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card" data-bgDark>
+            <img class="card-img" src="./logos and vectors/Shortlify.webp" alt="Shortlify image">
+            <figcaption>
+              <h3 data-txtDark>Shortlify</h3>
+              <p data-txtDark>This is a Frontend Mentor's Link Shortener App challenge.
+              </p>
+              <div class="tech-btn">
+                <div class="tech-use">
+                  <div class="tech">React JS</div>
+                  <a href="#" title="CSS" class="tech">SASS/SCSS</a>
+                  <div class="tech">Javascritp</div>
+                  <div class="tech">API</div>
+                  <div class="tech">Githup Pages</div>
+                </div>
+                <div class="card-buttons">
+                  <button class="card-btn" onclick="window.open(`https://github.com/davidfcopozo/url-shortener-app`)">
+                    <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.webp"
+                      alt="github logo">
+                    Source Code
+                  </button>
+                  <button class="card-btn" onclick="window.open(`https://davidfcopozo.github.io/url-shortener-app/`)">
+                    <i class="fas fa-podcast"></i> Live
+                    Demo
+                  </button>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="sections skills container" data-scroll-spy>
+        <h2 class="sections-title">Skills</h2>
+
+        <div class="skills-img"><img src="./logos and vectors/Sections vectors/undraw_Code_review_re_woeb.svg" alt="">
+        </div>
+
+        <div class="lang-wrapper" data-txtDark>
+          <div class="language-wrapper">
+            <i class="fab fa-html5 language-icon"></i>
+            <h3 class="lang-title">HTML</h3>
+          </div>
+
+          <div class="language-wrapper">
+            <i class="fab fa-css3-alt language-icon"></i>
+            <h3 class="lang-title">CSS</h3>
+          </div>
+
+          <div class="language-wrapper">
+            <i class="fab fa-js-square language-icon"></i>
+            <h3 class="lang-title">JavaScritp</h3>
+          </div>
+
+          <div class="language-wrapper">
+            <i class="fab fa-sass language-icon"></i>
+            <h3 class="lang-title">Sass</h3>
+          </div>
+
+          <div class="language-wrapper">
+            <i class="fab fa-react language-icon"></i>
+            <h3 class="lang-title">React JS</h3>
+          </div>
+
+          <div class="language-wrapper">
+            <i class="fab fa-bootstrap language-icon"></i>
+            <h3 class="lang-title">Bootstrap</h3>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="sections about container" data-txtDark data-scroll-spy>
+        <h2 class="sections-title">About me</h2>
+        <div class="about-wrapper">
+          <img src="./logos and vectors/Sections vectors/undraw_about_me_wa29.svg" alt="about me">
+          <p>
+            I discovered my passion for web development when I was forced to fix my girlfriend's website menu bar, since
+            we didn't have the money to hire a developer, that's when I was bound to do some research on HTML and CSS
+            and I have been in love with web development ever since.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="sections contact container" data-scroll-spy>
+        <h2 class="sections-title contact-title">Let's talk!</h2>
+        <div class="contact-img">
+          <img src="./logos and vectors/Sections vectors/contact.svg" alt="">
+        </div>
+
+        <form target="_blank" class="form" data-txtDark`>
+          <div class="send-email" onchange="validationForm()">
+            <p data-txtDark>Feel free to <a href="mailto:davidfco.pozo@hotmail.com" data-txtDark>send me an e-mail</a>
+            </p>
+            <p data-txtDark class="alt">Alternatively, you can also drop-in a mail here!
+            </p>
+          </div>
+
+          <div class="name">
+            <label data-txtDark for="name">Name:</label><br>
+            <input type="text" id="name" name="name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+              title="Only letters and spaces are allowed." required><br>
+          </div>
+
+          <div class="email">
+            <label data-txtDark for="email">Email:</label><br>
+            <input type="text" id="email" name="email"
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+              title="Please provide a valid E-mail Address. Ex: youremail@example.com" required><br>
+          </div>
+
+          <div class="message">
+            <label data-txtDark for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" data-pattern="^.{1,255}$" required></textarea>
+          </div>
+
+
+          <input class="form-btn" type="submit" value="Send">
+          <div class="form-loader">
+            <img class="none" src="./logos and vectors/rings.svg" alt="">
+          </div>
+        </form>
+      </section>
+    </section>
+
+    <!-- Form Modal -->
+    <div class="box">
+      <div class="modal-container" id="m3-o">
+        <div data-bgDark class="modal" style="--m-shadow: 0 0 10rem 0">
+          <img src="" alt="Modal image" class="modal-img">
+          <h1 data-txtDark class="modal-title">Thank You!</h1>
+          <p data-txtDark class="modal-text">The form was submitted successfully. <br> We will get back to you as soon
+            as possible.
+          </p>
+          <button data-txtDark class="modal-btn">OK &rarr;</button>
+
+        </div>
+      </div>
+    </div>
+
+    <hr data-txtDark>
+    <footer>
+      <div class="footer-social">
+        <div class="footer-social-wrapper" data-txtDark>
+
+          <div class="git footer-icons">
+            <p><a href="https://github.com/davidfcopozo" target="_blank"><i class="fab fa-github intro-icons"></i></a>
+            </p>
+          </div>
+
+          <div class="git footer-icons">
+            <p><a href="https://www.instagram.com/daidaicodes/" target="_blank"><i
+                  class="fab fa-instagram intro-icons"></i></a>
+            </p>
+          </div>
+
+          <div class="twitter footer-icons">
+            <p><a href="https://twitter.com/daidaicodes" target="_blank"><i class="fab fa-twitter intro-icons"></i></a>
+            </p>
+          </div>
+
+          <div class="linkedin footer-icons">
+            <p><a href="https://www.linkedin.com/in/david-f-pozo-328a6620b/" target="_blank"><i
+                  class="fab fa-linkedin intro-icons"></i></a>
+            </p>
+          </div>
+
+          <div class="email footer-icons">
+            <p><a href="https://github.com/davidfcopozo" target="_blank"><i class="fab fa-facebook intro-icons"></i></a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <p data-txtDark>Designed & Built by <br> David Francisco with <i class="fas fa-mug-hot"></i></p>
+    </footer>
+  </div>
+  </div>
+</body>
+
+</html>
