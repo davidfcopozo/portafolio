@@ -28,8 +28,10 @@
   --nav-linear-gradient: linear-gradient(to right,
       hsl(0, 0%, 100%),
       hsl(30, 14%, 91%));
-  --p-size: clamp(1rem, 1rem + 3vh, 6rem);
-  --h1-size: clamp(2rem, 1rem + 4vh, 8rem);
+  --p-size: clamp(1rem, 4vh, 8rem);
+  --h1-size: clamp(2rem, 5vh, 10rem);
+  --p-xl-size: clamp(1rem, 6vh, 8rem);
+  --h1-xl-size: clamp(2rem, 8vh, 10rem);
 }
 
 body {
@@ -263,6 +265,34 @@ section {
 }
 
 /* Intro section */
+
+
+
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro-icon {
+  width: 60%;
+  margin-inline: auto;
+}
+
+
+.david-emoji {
+  display: flex;
+  margin-top: 2.5em;
+  width: 100%;
+  height: auto;
+  background: center/cover url(../blue-triangle.svg) no-repeat;
+  justify-content: center;
+
+}
+
+.david-emoji>img {
+  max-width: 100%;
+}
 
 .sections-title {
   color: var(--blue-text);
@@ -756,6 +786,7 @@ footer {
 
 /* **************************************************************************************************** */
 
+
 @media (min-width: 675px) {
   .container {
     width: 90%;
@@ -788,6 +819,18 @@ footer {
   }
 
   /* Intro Section */
+
+  .intro-icon {
+    width: 50%;
+  }
+
+  .intro-wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .description {
+    text-align: left;
+  }
 
   .btn-port {
     transition: var(--transition);
@@ -990,6 +1033,18 @@ footer {
 
   /* Intro Section */
 
+  .intro-icon {
+    width: 50%;
+  }
+
+  .intro-wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .description {
+    text-align: left;
+  }
+
   h1 {
     margin-bottom: 0;
   }
@@ -1001,32 +1056,24 @@ footer {
   .intro-wrapper {
     margin: 0 auto;
     display: flex;
-    width: 80%;
     justify-content: center;
   }
 
   .soy {
-    font-size: 3rem;
+    text-align: left;
+    font-size: var(--p-xl-size);
   }
 
   .hola,
   h1 {
-    font-size: 5rem;
+    text-align: left;
+    font-size: var(--h1-xl-size);
   }
 
   .description {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  .pic-me {
-    display: flex;
-  }
-
-  .pic-me>img {
-    justify-content: flex-end;
   }
 
   /* Portafolio Section */
