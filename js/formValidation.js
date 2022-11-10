@@ -47,7 +47,6 @@ d.addEventListener("submit", (e) => {
   })
     .then((res) => (res.ok ? res.json() : Promise.reject(res)))
     .then((json) => {
-      console.log(json);
       $loader.style.display = "none";
       $modalImg.src = "./logos and vectors/checkmark-64.svg";
       $modal.classList.add("active-modal");
@@ -55,7 +54,6 @@ d.addEventListener("submit", (e) => {
     })
     .catch((err) => {
       $modalImg.src = "./logos and vectors/xMark.svg";
-      console.log(err);
       $loader.style.display = "none";
       $modalTitle.innerHTML = "Sorry!";
       $modalText.innerText = err.message;
