@@ -1340,4 +1340,15 @@ footer {
     height: auto;
     width: 100%;
   }
+
+  .form-loader {
+    position: relative;
+    width: 100%;
+    left: 100%;
+  }
+
+  .form-loader img {
+    width: 10%;
+    height: 100%;
+  }
 }
