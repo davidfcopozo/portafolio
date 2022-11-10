@@ -404,7 +404,7 @@ h1 {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--grey-background);
+  color: var(--pseudo-background);
   font-size: clamp(0.5rem, 1.5vh, 2rem);
   font-weight: 900;
   background-color: var(--blue-text);
