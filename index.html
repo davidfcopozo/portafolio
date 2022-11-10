@@ -17,8 +17,9 @@
   <link rel="manifest" href="/site.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans" rel="preload" as="font"
     type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="./js/app.js" type="module" defer></script>
 
   <title>David Francisco</title>
@@ -27,7 +28,7 @@
 <body data-bgDark>
   <div class="container" data-bgDark>
 
-    <button class="hamburger-btn hamburger hamburger--emphatic" type="button" id="toggle">
+    <button class="hamburger-btn hamburger hamburger--emphatic" type="button" id="toggle" aria-label="menu button">
       <span class="hamburger-box" id="inner-toggle">
         <span class="hamburger-inner" id="in-toggle"></span>
       </span>
@@ -55,12 +56,44 @@
 
           <ul class="nav-ul nav-ul--secondary">
             <li class="nav-li dark-btn">
-              <button class="theme-btn">🌙</button>
+              <button class="theme-btn" aria-label="dark & light theme toggler">🌙</button>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <div orientation="left" class="side-social">
+      <ul class="side-social-ul">
+        <li>
+          <a href="https://github.com/davidfcopozo" aria-label="GitHub" target="_blank" rel="noreferrer"></a>
+          <i class="fab fa-github"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/david-f-pozo-328a6620b/" aria-label="LinkedIn" target="_blank"
+            rel="noreferrer">
+            <i class="fab fa-linkedin-in" data-txtDark>
+            </i>
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:davodfco.pozo@hotmail.com" aria-label="E-Mail" target="_blank" rel="noreferrer">
+            <i class="far fa-envelope"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://twitter.com/daidaicodes" aria-label="Twitter" target="_blank" rel="noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+
+        <li><a href="https://github.com/bchiang7" aria-label="GitHub" target="_blank" rel="noreferrer"></a></li>
+      </ul>
+    </div>
 
     <section class="section">
       <!-- Intro Home -->
@@ -80,6 +113,15 @@
           </div>
         </div>
         <a href="#portafolio" class="btn-port" data-scroll-spy>Portfolio</a>
+
+        <div class="arrow-container">
+          <a href="#portafolio" class="arrow" data-scroll-spy>
+            <i class="fa-solid fa-chevron-down " data-txtDark></i>
+          </a>
+          <a href="#portafolio" class="arrow2" data-scroll-spy>
+            <i class="fa-solid fa-chevron-down arrow2" data-txtDark></i>
+          </a>
+        </div>
 
         <div class="intro-social" data-txtDark data-scroll-spy>
           <div class="git intro-icons">
@@ -104,88 +146,97 @@
         <h2 class="sections-title">Portfolio</h2>
         <div class="portafolio-wrapper">
           <!-- Projects -->
-          <figure class="card" data-bgDark>
-            <img class="card-img" src="./logos and vectors/myportafolio.webp" alt="">
+          <figure class="new-card effect">
+            <img src="./logos and vectors/Shortlify.webp" alt="Project">
             <figcaption>
-              <h3 data-txtDark>My Portfolio Website</h3>
-              <p data-txtDark>A Responsive portfolio website designed and built with love. It features scrollSpy & dark
-                and light theme switching using Local Storage.
-              </p>
-              <div class="tech-btn">
-                <div class="tech-use">
-                  <div class="tech">HTML</div>
-                  <div class="tech">CSS</div>
-                  <div class="tech">Javascritp</div>
-                  <div class="tech">Vercel</div>
-                </div>
-                <div class="card-buttons">
-                  <button class="card-btn">
-                    <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.webp"
-                      alt="github logo">
-                    Source Code
-                  </button>
+              <div class="figcap-wrapper">
+                <header>
+                  <h3>Shortlify</h3>
+                </header>
+                <p data-txtDark>This is a Frontend Mentor's Link Shortener App challenge.
+                </p>
+                <div class="tech-btn">
+                  <div class="tech-use">
+                    <div class="tech">React JS</div>
+                    <div class="tech">SASS/SCSS</div>
+                    <div class="tech">Javascritp</div>
+                    <div class="tech">API</div>
+                    <div class="tech">Local Storage</div>
+                    <div class="tech">Githup Pages</div>
+                  </div>
+                  <div class="card-buttons">
+                    <button class="card-btn" onclick="window.open(`https://github.com/davidfcopozo/url-shortener-app`)">
+                      <i class="fa-brands fa-github"></i>Source Code
+                    </button>
+                    <button class="card-btn" onclick="window.open(`https://davidfcopozo.github.io/url-shortener-app/`)">
+                      <i class="fa-solid fa-laptop"></i>Live
+                      Demo
+                    </button>
+                  </div>
                 </div>
               </div>
             </figcaption>
           </figure>
 
-          <figure class="card" data-bgDark>
-            <img class="card-img" src="./logos and vectors/budget-app.webp" alt="">
+          <figure class="new-card effect">
+            <img src="./logos and vectors/budget-app.webp" alt="Project">
             <figcaption>
-              <h3 data-txtDark>Budget Buddy</h3>
-              <p data-txtDark>This is a budget app I build out of a YouTube Video challenge with some tweaks of mine,
-                like the multilanguage and dark theme switches features.
-              </p>
-              <div class="tech-btn">
-                <div class="tech-use">
-                  <div class="tech">HTML</div>
-                  <div class="tech">CSS</div>
-                  <div class="tech">React JS</div>
-                  <div class="tech">Firebase</div>
-                </div>
-                <div class="card-buttons">
-                  <button class="card-btn" onclick="window.open(`https://github.com/davidfcopozo/budget-app`)">
-                    <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.webp"
-                      alt="github logo">
-                    Source Code
-                  </button>
-                  <button class="card-btn" onclick="window.open(`https://budget-buddy-d0db6.web.app/`)">
-                    <i class="fas fa-podcast"></i> Live
-                    Demo
-                  </button>
+              <div class="figcap-wrapper">
+                <header>
+                  <h3 data-txtDark>Budget Buddy</h3>
+                </header>
+                <p data-txtDark>Personal Budget Manager built out of a YouTube video with personal tweaks like Dark Mode
+                  and Multilingual.
+                </p>
+                <div class="tech-btn">
+                  <div class="tech-use" data-txtDark>
+                    <div class="tech">HTML</div>
+                    <div class="tech">CSS</div>
+                    <div class="tech">React JS</div>
+                    <div class="tech">Local Storage</div>
+                    <div class="tech">Firebase</div>
+                  </div>
+                  <div class="card-buttons">
+                    <button class="card-btn" onclick="window.open(`https://github.com/davidfcopozo/budget-app`)">
+                      <i class="fa-brands fa-github"></i>Source Code
+                    </button>
+                    <button class="card-btn" onclick="window.open(`https://budget-buddy-d0db6.web.app/`)">
+                      <i class="fa-solid fa-laptop"></i>Live
+                      Demo
+                    </button>
+                  </div>
                 </div>
               </div>
             </figcaption>
           </figure>
 
-          <figure class="card" data-bgDark>
-            <img class="card-img" src="./logos and vectors/Shortlify.webp" alt="Shortlify image">
+          <figure class="new-card effect">
+            <img src="./logos and vectors/portfolio.webp" alt="Project">
             <figcaption>
-              <h3 data-txtDark>Shortlify</h3>
-              <p data-txtDark>This is a Frontend Mentor's Link Shortener App challenge.
-              </p>
-              <div class="tech-btn">
-                <div class="tech-use">
-                  <div class="tech">React JS</div>
-                  <a href="#" title="CSS" class="tech">SASS/SCSS</a>
-                  <div class="tech">Javascritp</div>
-                  <div class="tech">API</div>
-                  <div class="tech">Githup Pages</div>
-                </div>
-                <div class="card-buttons">
-                  <button class="card-btn" onclick="window.open(`https://github.com/davidfcopozo/url-shortener-app`)">
-                    <img class="github-img-btn" src="./logos and vectors/Social media vectors/github.webp"
-                      alt="github logo">
-                    Source Code
-                  </button>
-                  <button class="card-btn" onclick="window.open(`https://davidfcopozo.github.io/url-shortener-app/`)">
-                    <i class="fas fa-podcast"></i> Live
-                    Demo
-                  </button>
+              <div class="figcap-wrapper">
+                <header>
+                  <h3 data-txtDark>Portfolio Website</h3>
+                </header>
+                <p data-txtDark>A Responsive website built with love. It features scrollSpy & Dark Mode.
+                </p>
+                <div class="tech-btn">
+                  <div class="tech-use" data-txtDark>
+                    <div class="tech">HTML</div>
+                    <div class="tech">CSS</div>
+                    <div class="tech">Javascritp</div>
+                    <div class="tech">Local Storage</div>
+                    <div class="tech">Vercel</div>
+                  </div>
+                  <div class="card-buttons">
+                    <button class="card-btn" onclick="window.open(`https://github.com/davidfcopozo/budget-app`)">
+                      <i class="fa-brands fa-github"></i>Source Code
+                    </button>
+                  </div>
                 </div>
               </div>
             </figcaption>
           </figure>
+
         </div>
       </section>
 
@@ -226,8 +277,12 @@
             <i class="fab fa-bootstrap language-icon"></i>
             <h3 class="lang-title">Bootstrap</h3>
           </div>
+          <!--         <div class="language-wrapper">
+              <i class="fab fa-nextjs language-icon"></i>
+              <h3 class="lang-title">Next JS</h3>
+            </div> -->
+          <!-- About Section -->
         </div>
-
       </section>
 
       <!-- About Section -->
@@ -236,7 +291,8 @@
         <div class="about-wrapper">
           <img src="./logos and vectors/Sections vectors/undraw_about_me_wa29.svg" alt="about me">
           <p>
-            I discovered my passion for web development when I was forced to fix my girlfriend's website menu bar, since
+            I discovered my passion for web development when I was forced to fix my girlfriend's website menu bar,
+            since
             we didn't have the money to hire a developer, that's when I was bound to do some research on HTML and CSS
             and I have been in love with web development ever since.
           </p>
@@ -284,6 +340,7 @@
         </form>
       </section>
     </section>
+
 
     <!-- Form Modal -->
     <div class="box">
@@ -336,7 +393,7 @@
       </div>
       <p data-txtDark>Designed & Built by <br> David Francisco with <i class="fas fa-mug-hot"></i></p>
     </footer>
-  </div>
+
   </div>
 </body>
 
