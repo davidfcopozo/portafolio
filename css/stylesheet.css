@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 :root {
   --purp-text: #9475af;
   --psuedo-purp-text: #9475af;
@@ -38,7 +31,7 @@
   --p-size: clamp(1rem, 4vh, 8rem);
   --h1-size: clamp(2rem, 5vh, 10rem);
   --card-header-size: clamp(1.5rem, 2.5vh, 6rem);
-  --card-p-size: clamp(1rem, 3vh, 6rem);
+  --card-p-size: clamp(1rem, 1.5vh, 5rem);
   --p-xl-size: clamp(1rem, 6vh, 8rem);
   --h1-xl-size: clamp(2rem, 8vh, 10rem);
 }
@@ -644,7 +637,7 @@ h1 {
   overflow: hidden;
   /* project animation depends on this */
   border-radius: 25px;
-  width: 250px;
+  width: 280px;
   min-height: 18em;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
