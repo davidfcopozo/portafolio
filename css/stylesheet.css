@@ -30,7 +30,8 @@
       hsl(30, 14%, 90%));
   --p-size: clamp(1rem, 4vh, 8rem);
   --h1-size: clamp(2rem, 5vh, 10rem);
-  --card-header-size: clamp(1rem, 2.5vh, 6rem);
+  --card-header-size: clamp(1.5rem, 2.5vh, 6rem);
+  --card-p-size: clamp(1rem, 3vh, 6rem);
   --p-xl-size: clamp(1rem, 6vh, 8rem);
   --h1-xl-size: clamp(2rem, 8vh, 10rem);
 }
@@ -405,7 +406,7 @@ h1 {
 .intro-social {
   display: flex;
   justify-content: center;
-  gap: 1.5em;
+  gap: 1em;
   margin: 0.5em 0;
 }
 
@@ -493,7 +494,7 @@ h1 {
 
 /* Projects Section */
 
-.portafolio-wrapper {
+.portfolio-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -555,6 +556,9 @@ figcaption {
 }
 
 .figcap-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   width: 90%;
   margin-inline: auto;
 }
@@ -572,11 +576,16 @@ figcaption a {
 
 figcaption p {
   text-align: center;
+  font-size: var(--card-p-size);
 }
 
 figcaption header {
   font-size: var(--card-header-size);
   text-align: center;
+}
+
+.new-card h3 {
+  margin-bottom: 0.5em;
 }
 
 .new-card.effect p {
@@ -646,11 +655,12 @@ figcaption header {
 
 .card-btn {
   display: flex;
-  font-size: clamp(0.3rem, 1.5vh, 3vh);
+  font-size: clamp(0.5rem, 2vh, 3vh);
   padding: 0.35em 0.7em;
   border-radius: 10px;
   border: 2px solid var(--purp-text);
   cursor: pointer;
+  font-family: var(--LeagueSpartan);
   z-index: 1;
 }
 
@@ -889,7 +899,7 @@ footer {
 
 /* Dark theme styles */
 .dt-background {
-  background: var(--navy-blue) !important;
+  background: var(--navy-blue);
 }
 
 .dt-text {
@@ -1080,20 +1090,20 @@ footer {
     scroll-margin-top: 3em;
   }
 
-  h3 {
-    font-size: 1.5rem;
-  }
-
   .new-card {
     width: 350px;
     min-height: 20em;
     flex: 0 0 auto;
   }
 
+  .new-card h3 {
+    font-size: var(--h1-size);
+  }
+
   figcaption p {
-    font-size: 1.2rem;
+    font-size: var(--p-size);
     width: 90%;
-    margin: 0.9rem auto;
+    margin: 0.5rem auto;
   }
 
   .tech {
@@ -1112,6 +1122,7 @@ footer {
   .contact-title {
     margin-bottom: 0;
   }
+
 
   /* Skills */
 
@@ -1308,12 +1319,12 @@ footer {
   }
 
   /* Portafolio Section */
-  .portafolio-wrapper {
+  .portfolio-wrapper {
     gap: 2.5em;
   }
 
   .new-card {
-    width: 400px;
+    width: 380px;
   }
 
   /* Skills Section */
@@ -1381,5 +1392,18 @@ footer {
   .form-loader img {
     width: 10%;
     height: 100%;
+  }
+}
+
+@media (min-width: 1250px) {
+
+  .new-card:not(.new-card:nth-of-type(3)):hover,
+  .new-card:not(.new-card:nth-of-type(4)):hover {
+    margin-top: unset;
+  }
+
+  .new-card:not(.new-card:nth-of-type(1)):hover,
+  .new-card:not(.new-card:nth-of-type(2)):hover {
+    margin-top: 5em;
   }
 }
