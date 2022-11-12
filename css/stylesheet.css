@@ -830,39 +830,53 @@ figcaption header {
 }
 
 .card-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  position: relative;
   font-size: clamp(0.5rem, 2vh, 3vh);
   padding: 0.35em 0.7em;
   border-radius: 10px;
-  border: 2px solid var(--purp-text);
+  border: none;
   cursor: pointer;
   font-family: var(--LeagueSpartan);
-  z-index: 1;
+  color: var(--navy-blue);
+}
+
+.card-btn:hover {
+  color: white;
+
+}
+
+.card-btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--grey-background);
+  border-radius: 10px;
+  z-index: -2;
+
 }
 
 .card-btn:before {
-  content: "";
+  content: '';
   position: absolute;
-  top: 0%;
-  bottom: 0%;
+  bottom: 0;
   left: 0;
-  right: 0;
   width: 0%;
   height: 100%;
   background-color: var(--purp-text);
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  border-radius: 10px;
   z-index: -1;
-  overflow: hidden;
 }
 
 .card-btn:hover:before {
-  height: 101%;
-  width: 101%;
-  overflow: hidden;
+  width: 100%;
+
 }
 
 .fa-solid,
@@ -1130,7 +1144,7 @@ footer {
 /* Form Modal */
 
 .box {
-  background-color: hsla(231, 78%, 95%, 0.2);
+  background-color: hsla(231, 78%, 65%, 0.2);
   display: none;
   z-index: 1000;
   position: fixed;
@@ -1725,13 +1739,13 @@ footer {
 
 @media (min-width: 1250px) {
 
-  .new-card:not(.new-card:nth-of-type(3)):hover,
-  .new-card:not(.new-card:nth-of-type(4)):hover {
-    margin-top: unset;
+  #card-3:hover,
+  #card-4:hover {
+    margin-top: 7em;
   }
 
   .new-card:not(.new-card:nth-of-type(1)):hover,
   .new-card:not(.new-card:nth-of-type(2)):hover {
-    margin-top: 5em;
+    margin-top: unset;
   }
 }
