@@ -145,7 +145,7 @@
         <h2 class="sections-title">Portfolio</h2>
         <div class="portfolio-wrapper">
           <!-- Projects -->
-          <figure class="new-card effect">
+          <figure id="card-1" class="new-card effect">
             <img src="./logos and vectors/Shortlify.webp" alt="Project">
             <figcaption>
               <div class="figcap-wrapper">
@@ -178,7 +178,7 @@
             </figcaption>
           </figure>
 
-          <figure class="new-card effect">
+          <figure id="card-2" class="new-card effect">
             <img src="./logos and vectors/budget-app.webp" alt="Project">
             <figcaption>
               <div class="figcap-wrapper">
@@ -211,7 +211,7 @@
             </figcaption>
           </figure>
 
-          <figure class="new-card effect">
+          <figure id="card-3" class="new-card effect">
             <img src="./logos and vectors/portfolio.webp" alt="Project">
             <figcaption>
               <div class="figcap-wrapper">
@@ -230,7 +230,7 @@
                     <div class="tech">Vercel</div>
                   </div>
                   <div class="card-buttons">
-                    <button class="card-btn" onclick="window.open(`https://github.com/davidfcopozo/budget-app`)">
+                    <button class="card-btn" onclick="window.open(`https://github.com/davidfcopozo/portafolio`)">
                       <i class="fa-brands fa-github"></i>Source Code
                     </button>
                   </div>
@@ -345,15 +345,15 @@
 
 
     <!-- Form Modal -->
-    <div class="box">
-      <div class="modal-container" id="m3-o">
+    <div class="box active-modal">
+      <div class="modal-container active-modal" id="m3-o">
         <div data-bgDark class="modal" style="--m-shadow: 0 0 10rem 0">
           <img src="" alt="Modal image" class="modal-img">
-          <h1 data-txtDark class="modal-title">Thank You!</h1>
-          <p data-txtDark class="modal-text">The form was submitted successfully. <br> We will get back to you as soon
+          <h1 class="modal-title">Thank You!</h1>
+          <p class="modal-text">The form was submitted successfully. <br> We will get back to you as soon
             as possible.
           </p>
-          <button data-txtDark class="modal-btn">OK &rarr;</button>
+          <button class="modal-btn">OK &rarr;</button>
 
         </div>
       </div>
