@@ -5,8 +5,6 @@ export default function formValidation() {
   const $validForm = d.querySelector("form [required]");
   const validation = w.getComputedStyle($validForm, "valid");
 
-  /* const $invalidForm = d.querySelector(".form [required]:invalid");  */
-
   if (validation) {
     d.documentElement.style.setProperty("--pseudo-purp-text", "green");
   } else if (!validation) {
@@ -40,9 +38,9 @@ d.addEventListener("submit", (e) => {
       Accept: "application/json",
     },
     body: JSON.stringify({
-      name: `${$name}`,
-      message: `${$message}`,
-      email: `${$email}`,
+      Name: `${$name}`,
+      Message: `${$message}`,
+      Email: `${$email}`,
     }),
   })
     .then((res) => (res.ok ? res.json() : Promise.reject(res)))
