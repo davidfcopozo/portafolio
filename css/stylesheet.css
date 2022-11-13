@@ -162,12 +162,11 @@ img {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   border-bottom: transparent;
-  z-index: 10000000;
 }
 
 .header {
-  -webkit-overflow-scrolling: touch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -658,19 +657,7 @@ h1 {
   transition: all 0.6s ease;
 }
 
-.new-card:nth-child(odd) {
-  -webkit-transform: perspective(800px) rotateY(345deg) translateY(50px) rotateX(10deg) scale(1);
-  transform: perspective(800px) rotateY(345deg) translateY(50px) rotateX(10deg);
-}
-
-.new-card:nth-child(even) {
-  -webkit-transform: perspective(800px) rotateY(-345deg) translateY(50px) rotateX(10deg) scale(1);
-  transform: perspective(800px) rotateY(-345deg) translateY(50px) rotateX(10deg);
-}
-
 .new-card:hover {
-  -webkit-transform: rotateY(0deg) translateY(0px) rotateX(0deg);
-  transform: rotateY(0deg) translateY(0px) rotateX(0deg);
   -webkit-box-shadow: 0 19px 67px -18px hsl(225deg 2% 62% / 80%);
   box-shadow: 0 19px 67px -18px hsl(225deg 2% 62% / 80%);
   -webkit-transform: scale(1.1);
