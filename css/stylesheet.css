@@ -28,12 +28,15 @@
   --nav-linear-gradient: linear-gradient(to right,
       hsl(198, 17%, 89%),
       hsl(30, 14%, 90%));
-  --p-size: clamp(1rem, 4vh, 8rem);
-  --h1-size: clamp(2rem, 5vh, 10rem);
+  --p-size: clamp(1rem, 5vh, 5rem);
+  --tech-size: clamp(0.8rem, 2vh, 5em);
+  --h1-size: clamp(2rem, 6vh, 6rem);
   --card-header-size: clamp(1.5rem, 2.2vh, 3rem);
   --card-p-size: clamp(1em, 1.5vh, 3rem);
   --p-xl-size: clamp(1rem, 6vh, 6rem);
   --h1-xl-size: clamp(2rem, 8vh, 8rem);
+  --mobile-nav: clamp(1.5rem, 2.5rem, 4rem);
+  --desktop-nav: clamp(1rem, 1.5rem, 4rem);
 }
 
 body {
@@ -105,7 +108,7 @@ img {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -193,6 +196,7 @@ img {
 }
 
 .active {
+  display: flex;
   visibility: visible;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
@@ -211,7 +215,7 @@ nav {
   top: 0;
   right: 0;
   height: 100%;
-  width: 80%;
+  width: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -269,7 +273,7 @@ nav {
 .nav-ul--primary a {
   font-family: var(--LeagueSpartan);
   list-style-type: none;
-  font-size: 2rem;
+  font-size: var(--mobile-nav);
   font-weight: 600;
   text-decoration: none;
 }
@@ -295,7 +299,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2rem;
+  font-size: var(--mobile-nav);
   padding: 0;
   margin: 0 1em 0 0;
   background: transparent;
@@ -369,7 +373,7 @@ nav a:focus {
 }
 
 .side-social-ul i {
-  font-size: var(--p-size);
+  font-size: var(--h1-size);
   color: var(--pseudo-background);
   margin-block: 0.5em;
 }
@@ -400,7 +404,7 @@ section {
 
 .sections-title {
   color: var(--blue-text);
-  font-size: 1.5rem;
+  font-size: var(--h1-size);
   margin-bottom: 1rem;
 }
 
@@ -636,7 +640,7 @@ h1 {
   overflow: hidden;
   /* project animation depends on this */
   border-radius: 25px;
-  width: 350px;
+  width: 320px;
   min-height: 17em;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -780,7 +784,7 @@ figcaption header {
 .tech {
   border: none;
   outline: none;
-  font-size: 0.8rem;
+  font-size: var(--tech-size);
   text-transform: uppercase;
   font-weight: 600;
   text-align: center;
@@ -919,7 +923,7 @@ figcaption header {
 
 .lang-title {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: var(--card-p-size);
 }
 
 .fa-html5:hover,
@@ -961,7 +965,7 @@ figcaption header {
 
 .about {
   font-family: var(--LeagueSpartan);
-  font-size: 1.5rem;
+  font-size: var(--p-size);
   font-weight: 600;
 }
 
@@ -970,7 +974,25 @@ figcaption header {
   font-weight: 800;
 }
 
+.about-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.about-wrapper img {
+  align-items: center;
+  margin-inline: auto;
+  width: 70%;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
 /* Contact */
+
+.contact {
+  width: 90%;
+}
 
 .send-email * {
   font-size: 1.4rem;
@@ -1089,7 +1111,7 @@ hr {
 }
 
 .footer-icons * {
-  font-size: 1.5rem;
+  font-size: clamp(1.3em, 3vh, 6em);
 }
 
 .footer-icons+.footer-icons {
@@ -1369,27 +1391,15 @@ footer {
     gap: 2.5em;
   }
 
+  .lang-title {
+    text-align: center;
+    font-size: var(--p-size);
+  }
+
   /* About Section */
 
-  .about-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-    width: 100%;
-  }
-
-  .about-wrapper img {
-    width: 60%;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-  }
-
   .about-wrapper p {
-    width: 40%;
+    width: 70%;
     text-align: justify;
   }
 
@@ -1505,12 +1515,12 @@ footer {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: var(--desktop-nav);
     font-weight: 600;
   }
 
   .theme-btn {
-    font-size: 1rem;
+    font-size: var(--desktop-nav);
   }
 
   .nav-ul--secondary {
@@ -1628,7 +1638,7 @@ footer {
     -moz-column-gap: 5%;
     column-gap: 5%;
     row-gap: normal;
-    width: 100%;
+    width: 80%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -1711,8 +1721,72 @@ footer {
 
 @media (min-width: 1250px) {
 
+  /* Project */
+
   .new-card:not(.new-card:nth-of-type(1)):hover,
   .new-card:not(.new-card:nth-of-type(2)):hover {
     margin-top: unset;
+  }
+
+  .about-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .about-wrapper img {
+    width: 50%;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  .about-wrapper p {
+    width: 40%;
+    text-align: justify;
+  }
+
+  .lang-wrapper {
+    width: 80%;
+    gap: 4em;
+  }
+
+  /* Contact */
+  .form {
+    width: 70%;
+  }
+}
+
+@media (min-width: 2000px) {
+
+  .new-card {
+    width: 30vw;
+    height: 20vw;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+
+  figcaption header {
+    font-size: var(--h1-size);
+  }
+
+  figcaption p {
+    font-size: var(--p-size);
+  }
+
+  /* Skills */
+
+  .lang-wrapper {
+    gap: 6em;
+  }
+
+  /* Contact */
+  .form {
+    width: 60%;
   }
 }
