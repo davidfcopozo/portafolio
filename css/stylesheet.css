@@ -380,6 +380,10 @@ nav a:focus {
 
 /* Sections */
 
+.sections {
+  scroll-margin-top: 5em;
+}
+
 section {
   scroll-margin-top: 3em;
 }
@@ -1311,13 +1315,6 @@ footer {
 
   .intro-icon {
     width: 50%;
-  }
-
-  .intro-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
   }
 
   .intro-social {
