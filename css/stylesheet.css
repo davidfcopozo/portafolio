@@ -935,7 +935,9 @@ figcaption header {
 .fa-js-square:hover,
 .fa-sass:hover,
 .fa-react:hover,
-.fa-bootstrap:hover {
+.fa-bootstrap:hover,
+.fa-node-js:hover,
+.cib-next-js:hover {
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
@@ -963,6 +965,14 @@ figcaption header {
 
 .fa-bootstrap:hover {
   color: #563d7c;
+}
+
+.cib-next-js:hover {
+  color: #474747;
+}
+
+.fa-node-js:hover {
+  color: #74B15B;
 }
 
 /* About Section */
