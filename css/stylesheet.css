@@ -644,8 +644,8 @@ h1 {
   overflow: hidden;
   /* project animation depends on this */
   border-radius: 25px;
-  width: 320px;
-  min-height: 17em;
+  width: 350px;
+  min-height: 20em;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
