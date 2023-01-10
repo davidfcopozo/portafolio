@@ -1371,6 +1371,9 @@ footer {
     flex: 0 0 400px;
   }
 
+  figcaption p {
+    text-align: center;
+    font-size: var(--lg-figcap-p-size)
   }
 
   .tech {
