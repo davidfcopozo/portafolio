@@ -10,7 +10,7 @@ export default function smoothscroll(target) {
 
       if (targetId != "#intro") {
         window.scrollTo({
-          top: d.querySelector(targetId).offsetTop - 50,
+          top: d.querySelector(targetId).offsetTop - 65,
           behavior: "smooth",
         });
       } else {
