@@ -37,6 +37,7 @@
   --h1-xl-size: clamp(2rem, 8vh, 8rem);
   --mobile-nav: clamp(1.5rem, 2.5rem, 4rem);
   --desktop-nav: clamp(1rem, 1.5rem, 4rem);
+  --lg-figcap-p-size: clamp(1em, 3.5vh, 1.5em);
 }
 
 body {
