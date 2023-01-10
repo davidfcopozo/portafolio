@@ -28,11 +28,11 @@
   --nav-linear-gradient: linear-gradient(to right,
       hsl(198, 17%, 89%),
       hsl(30, 14%, 90%));
-  --p-size: clamp(1rem, 5vh, 5rem);
-  --tech-size: clamp(0.8rem, 2vh, 5em);
-  --h1-size: clamp(2rem, 6vh, 6rem);
+  --p-size: clamp(1rem, 5vh, 1.5rem);
+  --tech-size: clamp(0.8rem, 1.5vh, 1rem);
+  --h1-size: clamp(2rem, 6vh, 2.5rem);
   --card-header-size: clamp(1.5rem, 2.2vh, 3rem);
-  --card-p-size: clamp(1em, 1.5vh, 3rem);
+  --card-p-size: clamp(1.3rem, 1.5vh, 3rem);
   --p-xl-size: clamp(1rem, 6vh, 6rem);
   --h1-xl-size: clamp(2rem, 8vh, 8rem);
   --mobile-nav: clamp(1.5rem, 2.5rem, 4rem);
