@@ -437,7 +437,6 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2.5em;
   width: 100%;
   height: auto;
   background: center/cover url(../blue-triangle.svg) no-repeat;
