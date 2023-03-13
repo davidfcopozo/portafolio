@@ -975,6 +975,10 @@ figcaption header {
   color: #74B15B;
 }
 
+.cib-redux:hover {
+  color: #764ABC;
+}
+
 /* About Section */
 
 .about {
