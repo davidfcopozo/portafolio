@@ -31,7 +31,7 @@
   --p-size: clamp(1rem, 5vh, 1.8rem);
   --tech-size: clamp(0.8rem, 1.5vh, 1rem);
   --h1-size: clamp(2rem, 6vh, 2.7rem);
-  --card-header-size: clamp(1.5rem, 2.2vh, 3rem);
+  --card-header-size: clamp(1.2rem, 2.2vh, 3rem);
   --card-p-size: clamp(1.3rem, 1.5vh, 3rem);
   --p-xl-size: clamp(1rem, 6vh, 6rem);
   --h1-xl-size: clamp(2rem, 8vh, 8rem);
