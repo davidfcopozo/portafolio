@@ -937,7 +937,9 @@ figcaption header {
 .fa-react:hover,
 .fa-bootstrap:hover,
 .fa-node-js:hover,
-.cib-next-js:hover {
+.cib-next-js:hover,
+.cib-redux:hover,
+.fa-fan:hover {
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
@@ -977,6 +979,10 @@ figcaption header {
 
 .cib-redux:hover {
   color: #764ABC;
+}
+
+.fa-fan:hover {
+  fill: #F23E50;
 }
 
 /* About Section */
